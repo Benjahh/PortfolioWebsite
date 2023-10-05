@@ -1,6 +1,6 @@
-import React from "react";
-import { frontEndTech, backEndTech, otherTech } from "@/data";
-import { flexBetweeen } from "@/data";
+import React from 'react';
+import { frontEndTech, backEndTech, otherTech } from '@/data';
+import { flexBetweeen } from '@/data';
 export const SkillPage = () => {
   return (
     <div
@@ -15,32 +15,26 @@ export const SkillPage = () => {
               Front-End
             </h2>
             <div className="flex flex-col">
-              {/* {frontEndTech.map((group) => (
-                  <div key={group.id} className='gap-4 p-2 flex flex-row'>
-                    {group.techs.map(({Icon, skillName, id})=>(
-                        <div key={id} className='p-4 rounded-3xl w-28 h-28 gap-2 items-center bg-firstColor flex-col flex justify-center'>
-                          <icon className="text-thirdColor">{Icon}</icon>
-                          <h3 className='text-white'>{skillName}</h3>
-                        </div>
-                    ))}
-                  </div>
-                ))} */}
+              {frontEndTech.map(({ skillName, Icon }) => (
+                <SkillCard
+                  key={tech.skillName}
+                  skillName={skillName}
+                  Icon={Icon}
+                />
+              ))}
             </div>
           </section>
 
           <section id="backend" className={`rounded-md h-auto flex flex-col`}>
             <h2 className={`text-thirdColor ${flexBetweeen}`}>Back-End</h2>
             <div className="flex flex-col justify-end self-end h-full">
-              {/*  {backEndTech.map((group) => (
-                  <div key={group.id} className='gap-4 p-2 flex flex-row-reverse'>
-                    {group.techs.map(({id, skillName, Icon}) => (
-                      <div key={id} className='flex flex-col w-28 h-28 rounded-3xl items-center gap-2 bg-firstColor p-4'>
-                        <icon className="rounded-md text-thirdColor">{Icon}</icon> 
-                        <h3 className='text-white'>{skillName}</h3>
-                      </div>
-                    ))}
-                  </div>
-                ))} */}
+              {backEndTech.map(({ skillName, Icon }) => (
+                <SkillCard
+                  key={tech.skillName}
+                  skillName={skillName}
+                  Icon={Icon}
+                />
+              ))}
             </div>
           </section>
         </div>
@@ -50,12 +44,13 @@ export const SkillPage = () => {
             Additional
           </h2>
           <div className={`flex-row ${flexBetweeen} gap-6`}>
-            {/*  {otherTech.map(({skillName, id, Icon})=>(
-                <div key={id} className='flex flex-col  w-28 h-28 bg-thirdColor rounded-3xl items-center gap-2 p-4'>
-                  <icon className="text-firstColor">{Icon}</icon>
-                  <h3 className='text-white'>{skillName}</h3>
-                </div>
-              ))} */}
+            {otherTech.map(({ skillName, Icon }) => (
+              <SkillCard
+                key={tech.skillName}
+                skillName={skillName}
+                Icon={Icon}
+              />
+            ))}
           </div>
         </section>
       </div>
