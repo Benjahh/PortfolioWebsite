@@ -5,6 +5,10 @@ const SkillCard = ({ skillName, Icon }) => {
         <Icon />
         <p>{skillName}</p>
       </div>
+      <div>
+        <Icon />
+        <p>{skillName}</p>
+      </div>
     </article>
   );
 };
