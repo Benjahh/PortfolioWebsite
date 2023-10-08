@@ -1,12 +1,5 @@
 const SkillCard = ({ skillName, Icon }) => {
-  return (
-    <article>
-      <div>
-        <Icon />
-        <p>{skillName}</p>
-      </div>
-    </article>
-  );
+  return <article></article>;
 };
 
 export default SkillCard;

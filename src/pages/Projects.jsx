@@ -1,8 +1,8 @@
-import React from "react";
-import { projects } from "../data";
-import { SiGithub } from "react-icons/si";
-import { SiLinktree } from "react-icons/si";
-import ProjectCard from "../utils/components/Cards/ProjectCard";
+import React from 'react';
+import { projects } from '../data';
+import { SiGithub } from 'react-icons/si';
+import { SiLinktree } from 'react-icons/si';
+import ProjectCard from '../utils/components/Cards/ProjectCard';
 
 export const ProjectPage = () => {
   return (
