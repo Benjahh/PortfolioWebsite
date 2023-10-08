@@ -1,6 +1,8 @@
-import React from 'react';
 import { frontEndTech, backEndTech, otherTech } from '@/data';
+import SkillCard from '../utils/components/Cards/SkillCard';
 import { flexBetweeen } from '@/data';
+
+/* TODO: ADD SKILL SECCTION SO IT SURROINDS EVERYTHING */
 export const SkillPage = () => {
   return (
     <div
@@ -16,11 +18,7 @@ export const SkillPage = () => {
             </h2>
             <div className="flex flex-col">
               {frontEndTech.map(({ skillName, Icon }) => (
-                <SkillCard
-                  key={tech.skillName}
-                  skillName={skillName}
-                  Icon={Icon}
-                />
+                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
               ))}
             </div>
           </section>
@@ -29,11 +27,7 @@ export const SkillPage = () => {
             <h2 className={`text-thirdColor ${flexBetweeen}`}>Back-End</h2>
             <div className="flex flex-col justify-end self-end h-full">
               {backEndTech.map(({ skillName, Icon }) => (
-                <SkillCard
-                  key={tech.skillName}
-                  skillName={skillName}
-                  Icon={Icon}
-                />
+                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
               ))}
             </div>
           </section>
@@ -45,11 +39,7 @@ export const SkillPage = () => {
           </h2>
           <div className={`flex-row ${flexBetweeen} gap-6`}>
             {otherTech.map(({ skillName, Icon }) => (
-              <SkillCard
-                key={tech.skillName}
-                skillName={skillName}
-                Icon={Icon}
-              />
+              <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
             ))}
           </div>
         </section>
