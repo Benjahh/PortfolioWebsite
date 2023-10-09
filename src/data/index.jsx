@@ -98,7 +98,7 @@ export const otherTech = [
 
 export const projects = [
   {
-    projectName: 'WebScrapeingApp',
+    projectName: 'WebScrapingApp',
     projectType: 'PRACTICE PROJECT',
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://facebook.com',
@@ -149,8 +149,9 @@ export const projects = [
     ],
   },
   {
-    projectType: 'PRACTICE PROJECT',
     projectName: 'CarShowcaseApp',
+    projectType: 'PRACTICE PROJECT',
+
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://google.com',
     projectDescription:

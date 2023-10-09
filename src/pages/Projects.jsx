@@ -6,16 +6,12 @@ import ProjectCard from '../utils/components/Cards/ProjectCard';
 
 export const ProjectPage = () => {
   return (
-    <section
-      id="projects"
-      className="border-green-300 flex-col justify-center items-center flex w-full h-full"
-    >
+    <section id="projects" className="min-h-screen border-2 border-white">
       <h1> TITLE </h1>
 
       <div className="border-2 border-rose-600 w-5/6 h-auto grid grid-cols-2 gap-8 ">
         {projects.map(
           ({
-            id,
             projectName,
             projectRepo,
             projectLink,
@@ -24,14 +20,13 @@ export const ProjectPage = () => {
             projectSkill,
           }) => (
             <ProjectCard
-              key={id}
+              key={projectName}
               projectLink={projectLink}
               projectImage={projectImage}
               projectRepo={projectRepo}
               projectName={projectName}
               projectDescription={projectDescription}
               projectSkill={projectSkill}
-              id={id}
             />
           )
         )}

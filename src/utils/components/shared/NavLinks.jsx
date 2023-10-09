@@ -1,12 +1,20 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const NavLinks = ({ className }) => {
   return (
-    <div className={className}>
-      <AnchorLink href="#home">Home</AnchorLink>
-      <AnchorLink href="#about">About</AnchorLink>
-      <AnchorLink href="#skills">Skills</AnchorLink>
-      <AnchorLink href="#projects">Projects</AnchorLink>
-    </div>
+    <>
+      <AnchorLink href="#home" className={className}>
+        Home
+      </AnchorLink>
+      <AnchorLink href="#about" className={className}>
+        About
+      </AnchorLink>
+      <AnchorLink href="#skills" className={className}>
+        Skills
+      </AnchorLink>
+      <AnchorLink href="#projects" className={className}>
+        Projects
+      </AnchorLink>
+    </>
   );
 };

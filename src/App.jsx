@@ -1,14 +1,14 @@
-import "./index.css";
-import { HomePage } from "@/pages/Home";
-import { AboutPage } from "@/pages/About";
-import { ProjectPage } from "@/pages/Projects";
-import { SkillPage } from "@/pages/Skills";
-import { Navbar } from "./utils/components/shared";
-import { Footer } from "./utils/components/shared";
+import './index.css';
+import { HomePage } from '@/pages/Home';
+import { AboutPage } from '@/pages/About';
+import { ProjectPage } from '@/pages/Projects';
+import { SkillPage } from '@/pages/Skills';
+import { Navbar } from './utils/components/shared';
+import { Footer } from './utils/components/shared';
 
 function App() {
   return (
-    <div className="w-screen bg-black font h-screen">
+    <div className="relative bg-black">
       <Navbar />
       <HomePage />
       <AboutPage />
