@@ -3,11 +3,14 @@ import { flexBetweeen } from '@/data';
 import { SlideInOnScroll } from '../utils/components/shared/FadeInOnScroll';
 export const AboutPage = () => {
   return (
-    <div id="about" className="min-h-screen border border-red-400">
-      <div className="">
-        <section className="first-letter:">
-          <h1 className="">ABOUT ME</h1>
-          <div className="">
+    <section
+      id="about"
+      className="min-h-screen flex-between border border-red-400"
+    >
+      <div className="flex m-12 p-2 flex-row gap-2 bg-green-300">
+        <div className="flex flex-col relative bg-secondary p-6">
+          <h1 className="font-palanquin">ABOUT ME</h1>
+          <div className="mt-6">
             <p>
               Hi, my name is Lucas. I'm a
               <span className="font-extrabold text-white">
@@ -54,13 +57,13 @@ export const AboutPage = () => {
           <a
             download=""
             src=""
-            className={`${flexBetweeen} hover:text-white hover:cursor-pointer self-end flex-row rounded-2xl border-[2px] border-white p-2 bg-dimPrimaryColor text-white`}
+            className=" absolute bottom-4 right-4 border p-2 "
           >
             Resume
           </a>
-        </section>
+        </div>
 
-        <section className="flex flex-col gap-2">
+        <div className="flex flex-col  bg-secondary">
           <SlideInOnScroll className="bg-dimPrimaryColor p-6 rounded-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta
             ipsa neque. Rerum dicta eaque eius assumenda. Itaque voluptatum
@@ -79,8 +82,8 @@ export const AboutPage = () => {
             commodi dignissimos alias nemo consequuntur quis ipsum cupiditate!
             Totam, quia aliquam.
           </SlideInOnScroll>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };

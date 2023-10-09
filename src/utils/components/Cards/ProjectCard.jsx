@@ -7,7 +7,6 @@ const ProjectCard = ({
   projectName,
   projectDescription,
   projectSkill,
-  id,
 }) => {
   return (
     <article>

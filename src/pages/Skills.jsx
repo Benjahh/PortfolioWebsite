@@ -6,14 +6,16 @@ export const SkillPage = () => {
   return (
     <section
       id="skills"
-      className="border-2  flex-col text-white flex-between border-white min-h-screen"
+      className="border-2 relative flex-col text-white flex-between border-white min-h-screen"
     >
-      <h1 className=" border-b-green-100 ">Skills Section</h1>
-
       <div>
-        {frontEndTech.map(({ skillName, Icon }) => (
-          <SkillCard skillName={skillName} Icon={Icon} />
-        ))}
+        <h1 className=" border-b-green-100 ">Skills Section</h1>
+
+        <div className="flex-between ">
+          {frontEndTech.map(({ skillName, Icon }) => (
+            <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
+          ))}
+        </div>
       </div>
     </section>
   );
