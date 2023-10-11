@@ -10,7 +10,9 @@ const ProjectCard = ({
 }) => {
   return (
     <article>
-      <div>{projectName}</div>
+      <div className="" data-carousel="slide" id="carousel">
+        <div data-carousel-item>{projectName}</div>
+      </div>
     </article>
   );
 };
