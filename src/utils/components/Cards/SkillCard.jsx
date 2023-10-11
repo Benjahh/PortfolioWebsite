@@ -1,6 +1,6 @@
 const SkillCard = ({ skillName, Icon }) => {
   return (
-    <article className="flex-between flex-col m-2 p-1 bg-primary">
+    <article className="flex-between flex-col p-1 border bg-primary">
       {Icon}
       {skillName}
     </article>

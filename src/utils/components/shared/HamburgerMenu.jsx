@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { flexBetweeen } from "@/data";
-import { NavLinks } from "./index";
+import React, { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { flexBetweeen } from '../../../data';
+import { NavLinks } from './index';
 
 export const HamburgerMenu = () => {
   const [isMenu, setIsMenu] = useState(false);
