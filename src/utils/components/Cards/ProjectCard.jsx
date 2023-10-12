@@ -11,19 +11,27 @@ const ProjectCard = ({
   reverse,
 }) => {
   return (
-    <article>
-      <div>
-        <img className="border h-60 w-60" />
-        <div>
+    <article className="relative">
+      <div className="flex-row flex">
+        <div className="">
+          <img fill className="a border object-fill h-60 w-60 bg-blue-950" />
+        </div>
+        <div className=" border-green-200 border">
           <div>
-            <header className="flex gap-2 flex-row">
-              <h1>{projectName}</h1>
-              <h2>{projectType}</h2>
+            <header className="flex gap-2 border flex-row">
+              <h1 className="bg-yellow-300">{projectName}</h1>
+              <h2 className="bg-yellow-400">{projectType}</h2>
             </header>
-            <p>{projectDescription}</p>
+            <p className="p-2">{projectDescription}</p>
           </div>
-          <a href="">gith</a>
-          <a href="">live</a>
+          <div className="p-2 flex flex-row gap-2">
+            <a href="" className="border p-1 rounded-md">
+              gith
+            </a>
+            <a href="" className="p-1 border rounded-md">
+              live
+            </a>
+          </div>
         </div>
       </div>
     </article>

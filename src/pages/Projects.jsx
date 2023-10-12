@@ -10,7 +10,7 @@ export const ProjectPage = () => {
       <h1> TITLE </h1>
 
       <div className="m-12 relative">
-        <div className="border-2 border-rose-600 flex-between flex-col ">
+        <div className="gap-8 flex-between flex-col ">
           {projects.map(
             ({
               projectName,
