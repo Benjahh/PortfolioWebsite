@@ -9,27 +9,33 @@ export const ProjectPage = () => {
     <section id="projects" className="min-h-screen border-2 border-white">
       <h1> TITLE </h1>
 
-      <div className="border-2 border-rose-600 w-5/6 h-auto grid grid-cols-2 gap-8 ">
-        {projects.map(
-          ({
-            projectName,
-            projectRepo,
-            projectLink,
-            projectDescription,
-            projectImage,
-            projectSkill,
-          }) => (
-            <ProjectCard
-              key={projectName}
-              projectLink={projectLink}
-              projectImage={projectImage}
-              projectRepo={projectRepo}
-              projectName={projectName}
-              projectDescription={projectDescription}
-              projectSkill={projectSkill}
-            />
-          )
-        )}
+      <div className="m-12 relative">
+        <div className="border-2 border-rose-600 flex-between flex-col ">
+          {projects.map(
+            ({
+              projectName,
+              projectRepo,
+              projectLink,
+              projectType,
+              projectDescription,
+              projectImage,
+              projectSkill,
+              reverse,
+            }) => (
+              <ProjectCard
+                key={projectName}
+                projectLink={projectLink}
+                projectImage={projectImage}
+                projectRepo={projectRepo}
+                projectName={projectName}
+                projectType={projectType}
+                projectDescription={projectDescription}
+                projectSkill={projectSkill}
+                reverse={reverse}
+              />
+            )
+          )}
+        </div>
       </div>
     </section>
   );
