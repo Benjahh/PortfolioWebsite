@@ -14,6 +14,8 @@ import {
   SiNextdotjs,
 } from 'react-icons/si';
 
+import testImage from '../assets/iamges/test_image.png';
+
 export const flexBetweeen = 'flex justify-center items-center';
 
 export const frontEndTech = [
@@ -103,8 +105,8 @@ export const projects = [
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://facebook.com',
     projectDescription:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit dolores debitis vero, illum provident, possimus aspernatur accusamus recusandae, iste velit eius tempore voluptatem ab repudiandae necessitatibus sunt eum quidem dolorem!',
-    projectImage: '/assets/test_image.png',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magni quam molestiae culpa unde sequi cum nesciunt repellat, similique quia atque eaque suscipit nam possimus quos, labore ipsam velit laboriosam?',
+    projectImage: testImage,
     reverse: false,
     projectSkill: [
       {
@@ -131,7 +133,7 @@ export const projects = [
     projectLink: 'https://google.com',
     projectDescription:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magni quam molestiae culpa unde sequi cum nesciunt repellat, similique quia atque eaque suscipit nam possimus quos, labore ipsam velit laboriosam?',
-    projectImage: '',
+    projectImage: testImage,
     reverse: true,
     projectSkill: [
       {
@@ -156,7 +158,7 @@ export const projects = [
     projectLink: 'https://google.com',
     projectDescription:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magni quam molestiae culpa unde sequi cum nesciunt repellat, similique quia atque eaque suscipit nam possimus quos, labore ipsam velit laboriosam?',
-    projectImage: '',
+    projectImage: testImage,
     reverse: false,
     projectSkill: [
       {
@@ -180,7 +182,7 @@ export const projects = [
     projectLink: 'https://google.com',
     projectDescription:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magni quam molestiae culpa unde sequi cum nesciunt repellat, similique quia atque eaque suscipit nam possimus quos, labore ipsam velit laboriosam?',
-    projectImage: '',
+    projectImage: testImage,
     reverse: true,
     projectSkill: [
       {
