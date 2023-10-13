@@ -101,7 +101,7 @@ export const otherTech = [
 export const projects = [
   {
     projectName: 'WebScrapingApp',
-    projectType: 'PRACTICE PROJECT',
+    projectType: 'Practice Project',
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://facebook.com',
     projectDescription:
@@ -128,7 +128,7 @@ export const projects = [
   },
   {
     projectName: 'ThreadsApp',
-    projectType: 'PRACTICE PROJECT',
+    projectType: 'Practice Project',
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://google.com',
     projectDescription:
@@ -152,7 +152,7 @@ export const projects = [
   },
   {
     projectName: 'CarShowcaseApp',
-    projectType: 'PRACTICE PROJECT',
+    projectType: 'Practice Project',
 
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://google.com',
@@ -177,7 +177,7 @@ export const projects = [
   },
   {
     projectName: 'BlockChainApp',
-    projectType: 'PRACTICE PROJECT',
+    projectType: 'Practice Project',
     projectRepo: 'https://github.com/Benjahh/benjahh.github.io',
     projectLink: 'https://google.com',
     projectDescription:
