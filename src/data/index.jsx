@@ -104,7 +104,7 @@ export const projects = [
     projectLink: 'https://facebook.com',
     projectDescription:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit dolores debitis vero, illum provident, possimus aspernatur accusamus recusandae, iste velit eius tempore voluptatem ab repudiandae necessitatibus sunt eum quidem dolorem!',
-    projectImage: '',
+    projectImage: '/assets/test_image.png',
     reverse: false,
     projectSkill: [
       {
