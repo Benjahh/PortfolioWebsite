@@ -18,11 +18,12 @@ export default {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        openSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        primary: '#131424',
-        secondary: '#383A47',
-        accent: '#F13024',
+        primary: '#2c2c2c',
+        secondary: '#242424',
+        accent: '#f9f366',
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',

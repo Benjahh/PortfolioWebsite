@@ -14,58 +14,63 @@ const ProjectCard = ({
   reverse,
 }) => {
   return (
-    <article className="relative  w-4/5 ">
+    <article className="relative   ">
       <div
         className={`${reverse ? 'flex-row-reverse' : 'flex-row'}
       flex`}
       >
-        <div className="self-center absolute w-60 h-full p-1 bg-blue-300">
+        <div className="self-center rounded-md absolute w-80 h-80">
           <img
             fill
             src={projectImage}
             alt="Project Image"
-            className="border w-full h-full"
+            className="w-full  h-full"
           />
         </div>
         <div
           className={`my-6 mb-12 relative flex-col ${
             reverse
-              ? 'lg:mr-40 lg:ml-20 mr-20 ml-10'
-              : 'lg:ml-40 lg:mr-20 ml-20 mr-10'
+              ? 'lg:mr-40 lg:ml-20 mr-40 ml-10'
+              : 'lg:ml-40 lg:mr-20 ml-40 mr-10'
           } `}
         >
           <header
-            className={`flex gap-2  text-sm ${
+            className={`flex text-primary gap-2 shadow-xl font-mono text-lg ${
               reverse ? 'flex-row ml-2' : 'flex-row-reverse mr-2'
             }`}
           >
-            <h1 className="bg-yellow-300 p-1 ">{projectName}</h1>
-            <h2 className="bg-yellow-400 p-1">{projectType}</h2>
+            <h1 className="bg-yellow-300 py-1 px-2 ">{projectName}</h1>
+            <h2 className="bg-accent py-1 px-2">{projectType}</h2>
           </header>
-          <div className="relative flex flex-col border rounded-md p-5  ">
-            <div className="border-b">
-              <p className="text-xs mb-4 ">{projectDescription}</p>
+          <div className="shadow-xl relative flex text-primary flex-col bg-white  rounded-sm p-5  ">
+            <div className="border-b-2 border-primary">
+              <p className="text-sm font-medium font-openSans mb-4 ">
+                {projectDescription}
+              </p>
+              <p className="text-sm font-medium font-openSans mb-4 ">
+                {projectDescription}
+              </p>
             </div>
-            <div className="my-2 gap-2 mt-4 text-xs flex flex-row italic">
+            <div className=" font-openSans font-medium my-2 gap-1 mt-4 text-sm flex flex-row italic">
               Built using
               {projectSkill.map(({ skillName, Icon, color }) => (
                 <p className=""> {skillName}</p>
               ))}
             </div>
             <div
-              className={`  text-xs mt-8 flex-row flex ${
+              className={` text-white text-sm mt-8 flex-row flex ${
                 reverse ? 'self-startt' : 'self-end'
               } gap-2`}
             >
               <a
                 href=""
-                className="border gap-2 flex-between px-2 rounded-md w-18  "
+                className="border bg-black gap-2 flex-between py-[3px] px-2 rounded-sm w-18  "
               >
                 Github <SiGithub />
               </a>
               <a
                 href=""
-                className="px-2 gap-2 border flex-between rounded-md w-18"
+                className="px-2 gap-2 bg-black border py-[3px] flex-between rounded-sm w-18"
               >
                 Live Site <HiLink />
               </a>

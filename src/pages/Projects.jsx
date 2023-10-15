@@ -8,12 +8,12 @@ export const ProjectPage = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen border-2 flex-between flex-col  border-white"
+      className="min-h-screen border-2 bg-secondary flex-between flex-col  border-white"
     >
       <h1 className="mt-16"> TITLE </h1>
 
       <div className="m-12 relative">
-        <div className="gap-36 p-8  flex-between flex-col ">
+        <div className="gap-80 p-8  flex-between flex-col ">
           {projects.map(
             ({
               projectName,
