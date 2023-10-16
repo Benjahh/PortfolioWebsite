@@ -1,6 +1,5 @@
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import React from 'react';
-import { flexBetweeen } from '../data';
 
 export const HomePage = () => {
   return (
@@ -14,6 +13,7 @@ export const HomePage = () => {
             <span className="text-primary">Full-Stack </span> software developer
           </p>
         </div>
+
         <div className="border-2 right-0 bottom-0 flex-row flex gap-4 text-yellow-500">
           <a>
             <SiGithub size="20" />

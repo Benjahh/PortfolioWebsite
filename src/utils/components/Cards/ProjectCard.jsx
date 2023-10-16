@@ -1,5 +1,6 @@
 import { SiGithub } from 'react-icons/si';
 import { HiLink } from 'react-icons/hi2';
+import { MoveOnScroll } from '../shared/MoveOnScroll';
 
 /* TODO: ANIMATION AND COLOR PALETTE */
 
@@ -27,7 +28,7 @@ const ProjectCard = ({
             className="w-full  h-full"
           />
         </div>
-        <div
+        <MoveOnScroll
           className={`my-6 mb-12 relative flex-col ${
             reverse
               ? 'lg:mr-40 lg:ml-20 mr-40 ml-10'
@@ -76,7 +77,7 @@ const ProjectCard = ({
               </a>
             </div>
           </div>
-        </div>
+        </MoveOnScroll>
       </div>
     </article>
   );
