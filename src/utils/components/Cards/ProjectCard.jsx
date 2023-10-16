@@ -20,7 +20,7 @@ const ProjectCard = ({
         className={`${reverse ? 'flex-row-reverse' : 'flex-row'}
       flex`}
       >
-        <div className="self-center rounded-md absolute w-80 h-80">
+        <div className="self-center rounded-md absolute w-80 h-96">
           <img
             fill
             src={projectImage}

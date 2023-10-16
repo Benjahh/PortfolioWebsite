@@ -6,22 +6,27 @@ import {
   motion,
   useInView,
   inView,
+  useTransform,
 } from 'framer-motion';
 export const MoveOnScroll = ({ children, className }) => {
   const ref = useRef();
   const isInView = useInView(ref, { once: false });
-  const MoveOnVariant = {
-    initial: { translateY: -50 },
-    final: { translateY: 50 },
-  };
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['0.8 0.8', '0.4 0.2'],
+  });
+  console.log(scrollYProgress);
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [90, -90]);
 
   return (
     <motion.div
-      variants={MoveOnVariant}
-      animate={isInView ? 'initial' : 'final'}
       className={className}
+      style={{
+        translateY: translateY,
+        opacity: 'unset',
+      }}
       ref={ref}
-      transition={{ duration: 0.3 }}
     >
       {children}
     </motion.div>
