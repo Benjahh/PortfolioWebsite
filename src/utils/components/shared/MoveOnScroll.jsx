@@ -1,16 +1,9 @@
 import { useRef, useEffect, useState } from 'react';
-import { useIntersectionObserver } from '../../customHooks/userInstersectionObserver';
-import {
-  useAnimation,
-  useScroll,
-  motion,
-  useInView,
-  inView,
-  useTransform,
-} from 'framer-motion';
+
+import { useScroll, motion, useTransform } from 'framer-motion';
 export const MoveOnScroll = ({ children, className }) => {
   const ref = useRef();
-  const isInView = useInView(ref, { once: false });
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['0.2 0.8', '0.4 0.2'],
