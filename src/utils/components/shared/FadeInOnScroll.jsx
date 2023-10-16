@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useIntersectionObserver } from "../../customHooks/userInstersectionObserver";
+import React, { useRef } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useIntersectionObserver } from '../../customHooks/userInstersectionObserver';
 
 export const FadeInOnScroll = ({ children, className }) => {
   const ref = useRef();

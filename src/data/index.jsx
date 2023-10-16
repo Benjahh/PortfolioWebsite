@@ -110,17 +110,27 @@ export const projects = [
     reverse: false,
     projectSkill: [
       {
-        skillName: 'REACTJS',
+        skillName: 'NextJS,',
         Icon: <SiReact size="" />,
         color: '#ff1e7a',
       },
       {
-        skillName: 'TAILWINDCSS',
+        skillName: 'TailWindcss,',
         Icon: <SiTailwindcss size="" />,
         color: '#FF5337',
       },
       {
-        skillName: 'TYPESCRIPT',
+        skillName: 'TypeScript,',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'HeadlessUI,',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'Redux',
         Icon: <SiTypescript size="" />,
         color: '#5e3ad8',
       },

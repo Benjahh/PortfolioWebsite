@@ -13,7 +13,7 @@ export const ProjectPage = () => {
       <h1 className="mt-16"> TITLE </h1>
 
       <div className="m-12 relative">
-        <div className="gap-80 p-8  flex-between flex-col ">
+        <div className="gap-60 p-8  flex-between flex-col ">
           {projects.map(
             ({
               projectName,

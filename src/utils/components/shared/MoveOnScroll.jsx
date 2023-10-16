@@ -13,7 +13,7 @@ export const MoveOnScroll = ({ children, className }) => {
   const isInView = useInView(ref, { once: false });
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['0.8 0.8', '0.4 0.2'],
+    offset: ['0.2 0.8', '0.4 0.2'],
   });
   console.log(scrollYProgress);
 

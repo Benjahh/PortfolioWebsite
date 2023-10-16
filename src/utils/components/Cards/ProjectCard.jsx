@@ -17,12 +17,11 @@ const ProjectCard = ({
   return (
     <article className="relative   ">
       <div
-        className={`${reverse ? 'flex-row-reverse' : 'flex-row'}
+        className={`flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
       flex`}
       >
-        <div className="self-center rounded-md absolute w-80 h-96">
+        <div className="self-center border-2 border-white p-2 brightness-50 rounded-md absolute w-80 h-96">
           <img
-            fill
             src={projectImage}
             alt="Project Image"
             className="w-full  h-full"
