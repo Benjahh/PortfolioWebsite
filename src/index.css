@@ -12,7 +12,7 @@
     @apply justify-center items-center flex;
   }
   .project__button {
-    @apply border bg-black gap-2 flex-between py-[3px] px-2 rounded-sm;
+    @apply border bg-black gap-2 flex-between py-[4px] hover:bg-accent hover:text-black  px-2 rounded-sm;
   }
   .project__description {
     @apply shadow-xl relative flex text-primary flex-col bg-white  rounded-sm p-5;
