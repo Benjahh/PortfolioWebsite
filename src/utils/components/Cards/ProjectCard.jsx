@@ -20,7 +20,7 @@ const ProjectCard = ({
         className={`flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
       flex`}
       >
-        <div className="self-center border-2 border-white p-2 brightness-50 rounded-md absolute w-80 h-96">
+        <div className="project__image">
           <img
             src={projectImage}
             alt="Project Image"
@@ -42,7 +42,7 @@ const ProjectCard = ({
             <h1 className="bg-yellow-300 py-1 px-2 ">{projectName}</h1>
             <h2 className="bg-accent py-1 px-2">{projectType}</h2>
           </header>
-          <div className="shadow-xl relative flex text-primary flex-col bg-white  rounded-sm p-5  ">
+          <div className="project__description ">
             <div className="border-b-2 border-primary">
               <p className="text-sm font-medium font-openSans mb-4 ">
                 {projectDescription}
@@ -51,7 +51,7 @@ const ProjectCard = ({
                 {projectDescription}
               </p>
             </div>
-            <div className=" font-openSans font-medium my-2 gap-1 mt-4 text-sm flex flex-row italic">
+            <div className="project__skills">
               Built using
               {projectSkill.map(({ skillName, Icon, color }) => (
                 <p className=""> {skillName}</p>
@@ -62,16 +62,10 @@ const ProjectCard = ({
                 reverse ? 'self-startt' : 'self-end'
               } gap-2`}
             >
-              <a
-                href=""
-                className="border bg-black gap-2 flex-between py-[3px] px-2 rounded-sm w-18  "
-              >
+              <a href="" className="project__button  ">
                 Github <SiGithub />
               </a>
-              <a
-                href=""
-                className="px-2 gap-2 bg-black border py-[3px] flex-between rounded-sm w-18"
-              >
+              <a href="" className="project__button ">
                 Live Site <HiLink />
               </a>
             </div>

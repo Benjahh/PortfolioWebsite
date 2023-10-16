@@ -11,4 +11,16 @@
   .flex-between {
     @apply justify-center items-center flex;
   }
+  .project__button {
+    @apply border bg-black gap-2 flex-between py-[3px] px-2 rounded-sm;
+  }
+  .project__description {
+    @apply shadow-xl relative flex text-primary flex-col bg-white  rounded-sm p-5;
+  }
+  .project__skills {
+    @apply font-openSans font-medium my-2 gap-1 mt-4 text-sm flex flex-row italic;
+  }
+  .project__image {
+    @apply self-center border-2 border-white p-2 brightness-50 rounded-md absolute w-80 h-96;
+  }
 }
