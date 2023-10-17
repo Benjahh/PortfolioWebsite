@@ -24,48 +24,30 @@ export const flexBetweeen = 'flex justify-center items-center';
 
 export const frontEndTech = [
   {
-    group: 'One',
-    skills: [
-      {
-        skillName: 'TypeScript',
-        Icon: <SiTypescript size="50" />,
-      },
+    skillName: 'TypeScript',
+    Icon: <SiTypescript size="50" />,
+  },
 
-      {
-        skillName: 'JavaScript',
-        Icon: <SiJavascript size="50" />,
-      },
+  {
+    skillName: 'JavaScript',
+    Icon: <SiJavascript size="50" />,
+  },
 
-      {
-        skillName: 'Nextjs',
-        Icon: <SiNextdotjs size="50" />,
-      },
-      {
-        skillName: 'ReactJS',
-        Icon: <SiReact size="50" />,
-      },
-    ],
+  {
+    skillName: 'Nextjs',
+    Icon: <SiNextdotjs size="50" />,
   },
   {
-    group: 'Two',
-    skills: [
-      {
-        skillName: 'FramerMotion',
-        Icon: <SiFramer size="50" />,
-      },
-      {
-        skillName: 'Tailwindcss',
-        Icon: <SiTailwindcss size="50" />,
-      },
-      {
-        skillName: 'CSS3',
-        Icon: <SiCss3 size="50" />,
-      },
-      {
-        skillName: 'HTML5',
-        Icon: <SiHtml5 size="50" />,
-      },
-    ],
+    skillName: 'ReactJS',
+    Icon: <SiReact size="50" />,
+  },
+  {
+    skillName: 'FramerMotion',
+    Icon: <SiFramer size="50" />,
+  },
+  {
+    skillName: 'Tailwindcss',
+    Icon: <SiTailwindcss size="50" />,
   },
 ];
 

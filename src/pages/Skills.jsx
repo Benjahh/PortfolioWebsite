@@ -12,29 +12,27 @@ export const SkillPage = () => {
         Skills Section
       </h1>
       <p>Technologies that i use for developing software.</p>
-      <div className="m-12 bg-primary ">
-        <div className="flex flex-col items-center justify-center gap-2 p-2">
-          <div className="flex-row flex gap-2">
-            {frontEndTech.map(({ group, skills }) => (
-              <div
-                className={`flex ${group === 'One' ? 'flex-row' : 'flex-col'}`}
-              >
-                {skills.map(({ skillName, Icon }) => (
-                  <SkillCard
-                    key={skillName}
-                    skillName={skillName}
-                    Icon={Icon}
-                  />
-                ))}
-              </div>
+
+      <div className="flex flex-col m-12 bg-primary  items-center rounded-md justify-center gap-4 p-4">
+        <div className="flex-col flex-between gap-2">
+          <h1>Front-End Stack</h1>
+          <div className="flex flex-row gap-2">
+            {frontEndTech.map(({ Icon, skillName }) => (
+              <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
             ))}
           </div>
+        </div>
 
+        <div className="flex-col gap-2 flex-between">
+          <h1>Back-End Stack</h1>
           <div className="flex-row gap-2 flex">
             {backEndTech.map(({ skillName, Icon }) => (
               <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
             ))}
           </div>
+        </div>
+        <div className="flex-col flex-between gap-2">
+          <h1>Other Tech</h1>
           <div className="flex-row flex gap-2">
             {otherTech.map(({ skillName, Icon }) => (
               <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
