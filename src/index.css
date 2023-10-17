@@ -23,4 +23,10 @@
   .project__image {
     @apply self-center border-2 border-white p-2 brightness-50 rounded-md absolute w-80 h-96;
   }
+  .skill__card {
+    @apply flex-between w-24 h-24 text-sm flex-col p-1 border-b-2 shadow-sm shadow-accent border-accent gap-1 rounded-md bg-primary;
+  }
+  .skill__container {
+    @apply flex flex-col m-12 bg-primary relative shadow-md items-center rounded-md justify-center gap-4 p-4;
+  }
 }
