@@ -6,13 +6,17 @@ import {
   SiTypescript,
   SiReact,
   SiVite,
-  SiHtml5,
-  SiCss3,
   SiMongodb,
   SiGit,
   SiRedux,
+  SiFramer,
   SiNextdotjs,
+  SiHtml5,
+  SiCss3,
+  SiNpm,
+  SiHeadlessui,
 } from 'react-icons/si';
+import { DiNpm } from 'react-icons/di';
 
 import testImage from '../assets/iamges/test_image.png';
 
@@ -20,38 +24,48 @@ export const flexBetweeen = 'flex justify-center items-center';
 
 export const frontEndTech = [
   {
-    skillName: 'ReactJS',
-    Icon: <SiReact size="50" />,
-  },
-  {
-    skillName: 'Tailwindcss',
-    Icon: <SiTailwindcss size="50" />,
-  },
-  {
-    skillName: 'TypeScript',
-    Icon: <SiTypescript size="50" />,
-  },
+    group: 'One',
+    skills: [
+      {
+        skillName: 'TypeScript',
+        Icon: <SiTypescript size="50" />,
+      },
 
-  {
-    id: 4,
-    skillName: 'JavaScript',
-    Icon: <SiJavascript size="50" />,
-  },
-  {
-    id: 5,
-    skillName: 'HTML',
-    Icon: <SiHtml5 size="50" />,
-  },
+      {
+        skillName: 'JavaScript',
+        Icon: <SiJavascript size="50" />,
+      },
 
-  {
-    id: 6,
-    skillName: 'CSS',
-    Icon: <SiCss3 size="50" />,
+      {
+        skillName: 'Nextjs',
+        Icon: <SiNextdotjs size="50" />,
+      },
+      {
+        skillName: 'ReactJS',
+        Icon: <SiReact size="50" />,
+      },
+    ],
   },
   {
-    id: 7,
-    skillName: 'Nextjs',
-    Icon: <SiNextdotjs size="50" />,
+    group: 'Two',
+    skills: [
+      {
+        skillName: 'FramerMotion',
+        Icon: <SiFramer size="50" />,
+      },
+      {
+        skillName: 'Tailwindcss',
+        Icon: <SiTailwindcss size="50" />,
+      },
+      {
+        skillName: 'CSS3',
+        Icon: <SiCss3 size="50" />,
+      },
+      {
+        skillName: 'HTML5',
+        Icon: <SiHtml5 size="50" />,
+      },
+    ],
   },
 ];
 
@@ -80,21 +94,10 @@ export const otherTech = [
     skillName: 'Git',
     Icon: <SiGit size="50" />,
   },
+
   {
-    skillName: 'Redux',
-    Icon: <SiRedux size="50" />,
-  },
-  {
-    skillName: 'Vite',
-    Icon: <SiVite size="50" />,
-  },
-  {
-    skillName: 'Git',
-    Icon: <SiGit size="50" />,
-  },
-  {
-    skillName: 'Redux',
-    Icon: <SiRedux size="50" />,
+    skillName: 'Npm',
+    Icon: <DiNpm size="50" />,
   },
 ];
 

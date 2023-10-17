@@ -8,7 +8,7 @@ import { Footer } from './utils/components/shared';
 
 function App() {
   return (
-    <div className="relative bg-black">
+    <div className="relative ">
       <Navbar />
       <HomePage />
       <AboutPage />

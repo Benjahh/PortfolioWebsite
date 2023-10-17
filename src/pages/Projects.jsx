@@ -8,9 +8,9 @@ export const ProjectPage = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen border-2 bg-secondary flex-between flex-col  border-white"
+      className="min-h-screen  bg-secondary flex-between flex-col"
     >
-      <h1 className="mt-16  font-mono font-bold font text-3xl text-white">
+      <h1 className="mt-16  font-mono font-bold  text-3xl text-white">
         Projects
       </h1>
 

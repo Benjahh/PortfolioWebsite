@@ -3,10 +3,7 @@ import { flexBetweeen } from '@/data';
 import { SlideInOnScroll } from '../utils/components/shared/FadeInOnScroll';
 export const AboutPage = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen flex-between border border-red-400"
-    >
+    <section id="about" className="min-h-screen flex-between  bg-secondary">
       <div className="flex m-12 p-2 flex-row gap-2 bg-green-300">
         <div className="flex flex-col relative bg-secondary p-6">
           <h1 className="font-palanquin">ABOUT ME</h1>
