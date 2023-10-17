@@ -13,6 +13,9 @@ export const ProjectPage = () => {
       <h1 className="mt-16  font-mono font-bold  text-3xl text-white">
         Projects
       </h1>
+      <p className="text-xl font-openSans text-white">
+        Software i've built, utilizing the mentioned technologies.
+      </p>
 
       <div className="m-12 relative">
         <div className="gap-60 p-8  flex-between flex-col ">

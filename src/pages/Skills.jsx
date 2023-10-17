@@ -17,7 +17,7 @@ export const SkillPage = () => {
         Technologies that i use for developing software.
       </p>
 
-      <div className="flex flex-col m-12 bg-primary  items-center rounded-md justify-center gap-4 p-4">
+      <div className="flex flex-col m-12 bg-primary relative shadow-md items-center rounded-md justify-center gap-4 p-4">
         <div className="flex-col flex-between gap-2">
           <h1>Front-End Stack</h1>
           <FadeInOnScroll className="flex flex-row gap-2">
