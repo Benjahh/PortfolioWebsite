@@ -1,6 +1,6 @@
 import { SiGithub } from 'react-icons/si';
 import { HiLink } from 'react-icons/hi2';
-import { MoveOnScroll } from '../shared/MoveOnScroll';
+import { MoveOnScroll } from '../framerComponents/MoveOnScroll';
 
 /* TODO: ANIMATION AND COLOR PALETTE */
 

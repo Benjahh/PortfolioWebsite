@@ -1,6 +1,6 @@
 import React from 'react';
-import { flexBetweeen } from '@/data';
-import { SlideInOnScroll } from '../utils/components/shared/FadeInOnScroll';
+
+import { SlideInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 export const AboutPage = () => {
   return (
     <section id="about" className="min-h-screen flex-between  bg-secondary">
