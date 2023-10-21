@@ -22,8 +22,8 @@ export default {
       },
       colors: {
         primary: '#2c2c2c',
-        secondary: '#242424',
-        accent: '#f9f366',
+        secondary: '#1E2120',
+        accent: '#6267F1',
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',

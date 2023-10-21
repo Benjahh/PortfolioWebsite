@@ -1,6 +1,7 @@
 import { SiGithub } from 'react-icons/si';
 import { HiLink } from 'react-icons/hi2';
 import { MoveOnScroll } from '../framerComponents/MoveOnScroll';
+import { FadeInOnScroll } from '../framerComponents/FadeInOnScroll';
 
 /* TODO: ANIMATION AND COLOR PALETTE */
 
@@ -35,7 +36,7 @@ const ProjectCard = ({
           } `}
         >
           <header
-            className={`flex text-primary gap-2 shadow-xl font-mono text-lg ${
+            className={`flex font-bold text-primary gap-2 shadow-xl font-mono text-lg ${
               reverse ? 'flex-row ml-2' : 'flex-row-reverse mr-2'
             }`}
           >
@@ -44,12 +45,12 @@ const ProjectCard = ({
           </header>
           <div className="project__description ">
             <div className="border-b-2 border-primary">
-              <p className="text-sm font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className="text-sm font-medium font-openSans mb-4 ">
                 {projectDescription}
-              </p>
-              <p className="text-sm font-medium font-openSans mb-4 ">
+              </FadeInOnScroll>
+              <FadeInOnScroll className="text-sm font-medium font-openSans mb-4 ">
                 {projectDescription}
-              </p>
+              </FadeInOnScroll>
             </div>
             <div className="project__skills">
               Built using

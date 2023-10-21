@@ -6,7 +6,7 @@ export const ShrinkInView = ({ children, className }) => {
     <motion.div
       className={className}
       transition={{ duration: 1 }}
-      whileInView={{ margin: 80 }}
+      whileInView={{ margin: 40 }}
     >
       {children}
     </motion.div>
