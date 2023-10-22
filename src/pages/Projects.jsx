@@ -10,7 +10,7 @@ export const ProjectPage = () => {
       id="projects"
       className="min-h-screen  bg-secondary flex-between flex-col"
     >
-      <h1 className="mt-16  font-mono font-bold  text-3xl text-white">
+      <h1 className="mt-16  font-mono font-bold  text-3xl text-secondAccent">
         Projects
       </h1>
       <p className="text-xl font-openSans text-white">

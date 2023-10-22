@@ -24,6 +24,7 @@ export default {
         primary: '#2c2c2c',
         secondary: '#1E2120',
         accent: '#6267F1',
+        secondAccent: '#4ACEA8',
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',

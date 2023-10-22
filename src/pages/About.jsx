@@ -6,41 +6,53 @@ export const AboutPage = () => {
     <section id="about" className="min-h-screen flex-between  bg-secondary">
       <div className="flex m-12 flex-row gap-2 ">
         <div className="flex flex-col relative  bg-white rounded-xl p-6">
-          <h1 className="font-palanquin">ABOUT ME</h1>
-          <div className="mt-6 gap-2 flex-col flex text-left ">
+          <h1 className=" text-3xl font-mono">ABOUT ME</h1>
+          <div className="mt-6 gap-2 flex-col text-lg flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a
               <span className="font-extrabold text-secondary">
-                Computer Engineering
+                {' '}
+                Computer Engineering{' '}
               </span>
               student with a passion for
-              <span className="font-extrabold">Software Engineering</span>.
+              <span className="font-extrabold"> Software Engineering </span>.
             </p>
             <p>
               I'm currently pursuing
               <span className="font-extrabold text-secondary">
-                Computer Engineering
+                {' '}
+                Computer Engineering{' '}
               </span>
-              at <span className="font-extrabold text-secondary">UA </span>
+              at <span className="font-extrabold text-secondary"> UA </span>
               (Universidad Americana), located in Asuncion, Paraguay.
             </p>
             <p>
               I'm a full-stack developer, specializing in the
-              <span className="font-extrabold text-secondary">MERN</span> stack
-              (MongoDB, Express, React, and Node), and I'm keen on building
-              high-quality, scalable web applications.
+              <span className="font-extrabold text-secondary"> MERN </span>{' '}
+              stack (MongoDB, Express, React, and Node), and I'm keen on
+              building high-quality, scalable web applications.
             </p>
             <p>
               My approach to application development is based on several core
               principles. I prioritize creating
-              <span className="font-extrabold text-secondary">modern</span> user
-              interfaces that are visually
-              <span className="font-extrabold  text-secondary">appealing</span>
+              <span className="font-extrabold text-secondary">
+                {' '}
+                modern{' '}
+              </span>{' '}
+              user interfaces that are visually
+              <span className="font-extrabold  text-secondary">
+                {' '}
+                appealing{' '}
+              </span>
               and easy to use. Additionally, I am committed to ensuring that
               every application I build performs
-              <span className="font-extrabold  text-secondary">optimally </span>
+              <span className="font-extrabold  text-secondary">
+                {' '}
+                optimally{' '}
+              </span>
               and is
               <span className="font-extrabold  text-secondary">
+                {' '}
                 user-friendly
               </span>
               .
@@ -60,7 +72,7 @@ export const AboutPage = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-2  bg-secondary">
+        <div className="flex flex-col gap-2 text bg-secondary">
           <SlideInOnScroll className="bg-accent p-6 rounded-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta
             ipsa neque. Rerum dicta eaque eius assumenda. Itaque voluptatum

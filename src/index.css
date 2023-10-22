@@ -12,21 +12,21 @@
     @apply justify-center items-center flex;
   }
   .project__button {
-    @apply border bg-black gap-2 flex-between py-[4px] hover:bg-accent hover:text-black  px-2 rounded-sm;
+    @apply border text-base bg-black gap-2 flex-between py-[4px] hover:bg-accent hover:text-black  px-2 rounded-sm;
   }
   .project__description {
-    @apply shadow-xl relative flex text-primary flex-col bg-white  rounded-sm p-5;
+    @apply shadow-xl relative flex  text-primary flex-col bg-white  rounded-sm p-8;
   }
   .project__skills {
-    @apply font-openSans font-medium my-2 gap-1 mt-4 text-sm flex flex-row italic;
+    @apply font-openSans font-medium my-2 gap-1 mt-4  flex flex-row italic;
   }
   .project__image {
-    @apply self-center border-2 border-white p-2 brightness-50 rounded-md absolute w-80 h-96;
+    @apply self-center border-2 border-secondAccent p-2  rounded-md absolute w-96 h-96;
   }
   .skill__card {
     @apply flex-between w-24 h-24 text-sm flex-col p-1 border-b-2 shadow-sm shadow-accent border-accent gap-1 rounded-md bg-primary;
   }
   .skill__container {
-    @apply flex flex-col m-12 bg-primary relative shadow-md items-center rounded-md justify-center gap-4 p-4;
+    @apply flex flex-col m-12  relative shadow-md items-center rounded-md justify-center gap-4 p-4;
   }
 }

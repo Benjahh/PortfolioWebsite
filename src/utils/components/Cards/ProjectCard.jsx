@@ -16,7 +16,7 @@ const ProjectCard = ({
   reverse,
 }) => {
   return (
-    <article className="relative   ">
+    <article className="relative ">
       <div
         className={`flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
       flex`}
@@ -36,19 +36,22 @@ const ProjectCard = ({
           } `}
         >
           <header
-            className={`flex font-bold text-primary gap-2 shadow-xl font-mono text-lg ${
+            className={`flex font-bold text-black gap-2 shadow-xl font-mono text-xl ${
               reverse ? 'flex-row ml-2' : 'flex-row-reverse mr-2'
             }`}
           >
-            <h1 className="bg-yellow-300 py-1 px-2 ">{projectName}</h1>
+            <h1 className="bg-secondAccent py-1 px-2 ">{projectName}</h1>
             <h2 className="bg-accent py-1 px-2">{projectType}</h2>
           </header>
           <div className="project__description ">
             <div className="border-b-2 border-primary">
-              <FadeInOnScroll className="text-sm font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
-              <FadeInOnScroll className="text-sm font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
+                {projectDescription}
+              </FadeInOnScroll>
+              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
             </div>
