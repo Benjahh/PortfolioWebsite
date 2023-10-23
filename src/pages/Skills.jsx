@@ -22,7 +22,7 @@ export const SkillPage = () => {
       <div className="skill__container">
         <div className="flex-col flex-between gap-2">
           <h1 className="text-lg text-secondAccent">Front-End Stack</h1>
-          <FadeInOnScroll className="flex flex-row gap-2">
+          <FadeInOnScroll className="flex flex-row gap-2 ">
             {frontEndTech.map(({ Icon, skillName }) => (
               <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
             ))}

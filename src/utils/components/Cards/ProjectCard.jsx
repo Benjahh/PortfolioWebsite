@@ -44,7 +44,7 @@ const ProjectCard = ({
             <h2 className="bg-accent py-1 px-2">{projectType}</h2>
           </header>
           <div className="project__description ">
-            <div className="border-b-2 border-primary">
+            <div className="border-b-2 border-white">
               <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>

@@ -11,7 +11,7 @@ export const Navbar = () => {
       <section className=" items-center w-5/6 hidden md:flex justify-between flex-row mx-auto">
         <div className="text-white">Favicon</div>
         <div className=" flex-row gap-6 text-accent font-monsterrat font-bold flex-between">
-          <NavLinks className="hover:scale-110 text-xl" />
+          <NavLinks className="hover:scale-110 text-lg" />
           <ToggleComponent />
         </div>
       </section>

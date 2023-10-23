@@ -4,16 +4,16 @@ export const NavLinks = ({ className }) => {
   return (
     <>
       <AnchorLink href="#home" className={className}>
-        Home
+        HOME
       </AnchorLink>
       <AnchorLink href="#about" className={className}>
-        About
+        ABOUT
       </AnchorLink>
       <AnchorLink href="#skills" className={className}>
-        Skills
+        SKILLS
       </AnchorLink>
       <AnchorLink href="#projects" className={className}>
-        Projects
+        PROJECTS
       </AnchorLink>
     </>
   );
