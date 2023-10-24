@@ -5,9 +5,9 @@ export const AboutPage = () => {
   return (
     <section id="about" className="min-h-screen flex-between  bg-secondary">
       <div className="flex m-12 flex-row gap-2 ">
-        <div className="flex flex-col relative  bg-white rounded-xl p-6">
+        <div className="flex flex-col relative  bg-white rounded-xl p-8">
           <h1 className=" text-3xl font-mono">ABOUT ME</h1>
-          <div className="mt-6 gap-2 flex-col text-lg flex text-left ">
+          <div className="mt-6 gap-4 flex-col  flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a
               <span className="font-extrabold text-secondary">

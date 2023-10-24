@@ -29,50 +29,45 @@ const ProjectCard = ({
           />
         </div>
         <MoveOnScroll
-          className={`my-6 mb-12 relative flex-col ${
-            reverse
-              ? 'lg:mr-40 lg:ml-20 mr-40 ml-10'
-              : 'lg:ml-40 lg:mr-20 ml-40 mr-10'
+          className={`my-6 mb-12 flex relative flex-col ${
+            reverse ? 'lg:mr-80 mr-40 ml-10' : 'lg:ml-80  ml-40 mr-10'
           } `}
         >
           <header
-            className={`flex font-bold text-black gap-2 shadow-xl font-mono text-xl ${
-              reverse ? 'flex-row ml-2' : 'flex-row-reverse mr-2'
+            className={`flex font-bold flex-col gap-2 font-mono text-xl ${
+              reverse ? ' ml-2  items-start' : ' mr-2 items-end'
             }`}
           >
-            <h1 className="bg-secondAccent py-1 px-2 ">{projectName}</h1>
-            <h2 className="bg-accent py-1 px-2">{projectType}</h2>
+            <h2 className=" py-1 px-2 text-accent">{projectType}</h2>
+            <h1 className="bg-accent py-1 px-2 text-white ">{projectName}</h1>
           </header>
           <div className="project__description ">
             <div className="border-b-2 border-white">
-              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" brightness-75 font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
-              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
-                {projectDescription}
-              </FadeInOnScroll>
-              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" brightness-75 font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
             </div>
             <div className="project__skills">
-              Built using
+              <span className="brightness-75">Built using</span>
               {projectSkill.map(({ skillName, Icon, color }) => (
-                <p className=""> {skillName}</p>
+                <p className="text-accent"> {skillName}</p>
               ))}
             </div>
-            <div
-              className={` text-white text-sm mt-8 flex-row flex ${
-                reverse ? 'self-startt' : 'self-end'
-              } gap-2`}
-            >
-              <a href="" className="project__button  ">
-                Github <SiGithub />
-              </a>
-              <a href="" className="project__button ">
-                Live Site <HiLink />
-              </a>
-            </div>
+          </div>
+          <div
+            className={` text-white text-sm mt-4  flex-row flex ${
+              reverse ? 'self-start' : 'self-end'
+            } gap-2`}
+          >
+            <a href="" className="project__button  ">
+              Github <SiGithub />
+            </a>
+            <a href="" className="project__button ">
+              Live Site <HiLink />
+            </a>
           </div>
         </MoveOnScroll>
       </div>

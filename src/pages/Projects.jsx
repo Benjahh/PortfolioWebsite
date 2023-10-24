@@ -8,17 +8,16 @@ export const ProjectPage = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen  bg-secondary flex-between flex-col"
+      className="min-h-screen px-80 bg-secondary flex-between flex-col"
     >
-      <h1 className="mt-16  font-mono font-bold  text-3xl text-secondAccent">
-        Projects
-      </h1>
-      <p className="text-xl font-openSans text-white">
-        Software i've built, utilizing the mentioned technologies.
-      </p>
-
-      <div className="m-12 relative">
-        <div className="gap-60 p-8  flex-between flex-col ">
+      <title className="flex-between flex-col gap-8 mb-16  mt-28">
+        <h1 className=" font-montserrat font-bold  text-3xl text-white">
+          Some <span className="text-accent"> Projects </span> i've built,
+          honing my skills.
+        </h1>
+      </title>
+      <div className=" relative">
+        <div className="gap-44 p-8  flex-between flex-col ">
           {projects.map(
             ({
               projectName,
