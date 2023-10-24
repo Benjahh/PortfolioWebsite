@@ -5,6 +5,9 @@ import SkillCard from '../utils/components/Cards/SkillCard';
 import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 
 import { SlideInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
+
+<TODO>STYLING AND ANIMATION</TODO>;
+
 export const AboutPage = () => {
   return (
     <section
