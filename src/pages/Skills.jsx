@@ -8,7 +8,7 @@ export const SkillPage = () => {
   return (
     <ShrinkInView
       id="skills"
-      className=" relative bg-secondary flex-between gap-24 flex-col text-white  min-h-screen"
+      className=" hidden relative bg-secondary flex-between gap-24 flex-col text-white  min-h-screen"
     >
       <div className="flex-between flex-col">
         <h1 className=" font-mono font-bold mb-8 border text-3xl text-secondAccent ">

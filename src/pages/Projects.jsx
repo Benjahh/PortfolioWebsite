@@ -3,12 +3,13 @@ import { projects } from '../data';
 import { SiGithub } from 'react-icons/si';
 import { SiLinktree } from 'react-icons/si';
 import ProjectCard from '../utils/components/Cards/ProjectCard';
+import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 
 export const ProjectPage = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen px-80 bg-secondary flex-between flex-col"
+      className="min-h-screen md:px-80 py-40 bg-secondary flex-between flex-col"
     >
       <title className="flex-between flex-col gap-8 mb-16  mt-28">
         <h1 className=" font-montserrat font-bold  text-3xl text-white">
@@ -17,7 +18,7 @@ export const ProjectPage = () => {
         </h1>
       </title>
       <div className=" relative">
-        <div className="gap-44 p-8  flex-between flex-col ">
+        <div className="gap-60 p-8  flex-between flex-col ">
           {projects.map(
             ({
               projectName,

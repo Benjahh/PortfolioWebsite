@@ -10,7 +10,7 @@ export const MoveOnScroll = ({ children, className }) => {
   });
   console.log(scrollYProgress);
 
-  const translateY = useTransform(scrollYProgress, [0, 1], [130, -130]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [90, -90]);
 
   return (
     <motion.div

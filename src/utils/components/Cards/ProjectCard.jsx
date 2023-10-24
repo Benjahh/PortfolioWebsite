@@ -2,6 +2,7 @@ import { SiGithub } from 'react-icons/si';
 import { HiLink } from 'react-icons/hi2';
 import { MoveOnScroll } from '../framerComponents/MoveOnScroll';
 import { FadeInOnScroll } from '../framerComponents/FadeInOnScroll';
+import { ScaleInView } from '../framerComponents/ScaleInView';
 
 /* TODO: ANIMATION AND COLOR PALETTE */
 
@@ -18,14 +19,18 @@ const ProjectCard = ({
   return (
     <article className="relative ">
       <div
-        className={`flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
+        className={`flex-col border-b-2   border-accent ${
+          reverse
+            ? 'md:flex-row-reverse border-l-2 '
+            : ' border-r-2 md:flex-row'
+        }
       flex`}
       >
         <div className="project__image">
           <img
             src={projectImage}
             alt="Project Image"
-            className="w-full  h-full"
+            className="w-full opacity-50 h-full"
           />
         </div>
         <MoveOnScroll
@@ -38,8 +43,10 @@ const ProjectCard = ({
               reverse ? ' ml-2  items-start' : ' mr-2 items-end'
             }`}
           >
-            <h2 className=" py-1 px-2 text-accent">{projectType}</h2>
-            <h1 className="bg-accent py-1 px-2 text-white ">{projectName}</h1>
+            <h2 className=" py-1 px-2  text-accent">{projectType}</h2>
+            <h1 className="bg-accent rounded-sm py-1 px-2 text-white ">
+              {projectName}
+            </h1>
           </header>
           <div className="project__description ">
             <div className="border-b-2 border-white">
@@ -62,10 +69,10 @@ const ProjectCard = ({
               reverse ? 'self-start' : 'self-end'
             } gap-2`}
           >
-            <a href="" className="project__button  ">
+            <a href={projectRepo} className="project__button  ">
               Github <SiGithub />
             </a>
-            <a href="" className="project__button ">
+            <a href={projectLink} className="project__button ">
               Live Site <HiLink />
             </a>
           </div>

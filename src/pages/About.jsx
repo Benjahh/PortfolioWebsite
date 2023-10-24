@@ -1,12 +1,24 @@
 import React from 'react';
+import { frontEndTech, backEndTech, otherTech } from '@/data';
+import SkillCard from '../utils/components/Cards/SkillCard';
+
+import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 
 import { SlideInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 export const AboutPage = () => {
   return (
-    <section id="about" className="min-h-screen flex-between  bg-secondary">
-      <div className="flex m-12 flex-row gap-2 ">
-        <div className="flex flex-col relative  bg-white rounded-xl p-8">
-          <h1 className=" text-3xl font-mono">ABOUT ME</h1>
+    <section
+      id="about"
+      className="min-h-screen md:px-80 py-40 flex-between flex-col bg-secondary"
+    >
+      <title className="flex-between flex-col gap-8 mb-16  mt-2 text-white">
+        <h1 className=" font-montserrat font-bold  text-3xl text-white">
+          <span className="text-accent"> About </span> myself: My
+          <span className="text-accent"> tech </span> stack
+        </h1>
+      </title>
+      <div className="flex flex-row gap-2 ">
+        <div className="flex flex-col relative  bg-primary rounded-md p-8">
           <div className="mt-6 gap-4 flex-col  flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a
@@ -72,25 +84,32 @@ export const AboutPage = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-2 text bg-secondary">
-          <SlideInOnScroll className="bg-accent p-6 rounded-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta
-            ipsa neque. Rerum dicta eaque eius assumenda. Itaque voluptatum
-            commodi dignissimos alias nemo consequuntur quis ipsum cupiditate!
-            Totam, quia aliquam.
-          </SlideInOnScroll>
-          <SlideInOnScroll className="bg-accent p-6 rounded-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta
-            ipsa neque. Rerum dicta eaque eius assumenda. Itaque voluptatum
-            commodi dignissimos alias nemo consequuntur quis ipsum cupiditate!
-            Totam, quia aliquam.
-          </SlideInOnScroll>
-          <SlideInOnScroll className="bg-accent p-6 rounded-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta
-            ipsa neque. Rerum dicta eaque eius assumenda. Itaque voluptatum
-            commodi dignissimos alias nemo consequuntur quis ipsum cupiditate!
-            Totam, quia aliquam.
-          </SlideInOnScroll>
+        <div className="skill__container">
+          <div className="flex-col p-4 bg-primary rounded-md flex-between gap-4 ">
+            <h1 className="text-lg text-secondAccent">Front-End Stack</h1>
+            <FadeInOnScroll className="flex flex-row gap-2 ">
+              {frontEndTech.map(({ Icon, skillName }) => (
+                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
+              ))}
+            </FadeInOnScroll>
+          </div>
+
+          <div className="flex-col bg-primary gap-4 p-4 rounded-md w-full  flex-between">
+            <h1 className="text-lg text-secondAccent">Back-End Stack</h1>
+            <FadeInOnScroll className="flex-row gap-2 flex">
+              {backEndTech.map(({ skillName, Icon }) => (
+                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
+              ))}
+            </FadeInOnScroll>
+          </div>
+          <div className="flex-col bg-primary rounded-md w-full p-4 flex-between gap-4">
+            <h1 className="text-secondAccent text-lg">Other Tech</h1>
+            <FadeInOnScroll className="flex-row flex gap-2">
+              {otherTech.map(({ skillName, Icon }) => (
+                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
+              ))}
+            </FadeInOnScroll>
+          </div>
         </div>
       </div>
     </section>

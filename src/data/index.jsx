@@ -25,61 +25,61 @@ export const flexBetweeen = 'flex justify-center items-center';
 export const frontEndTech = [
   {
     skillName: 'TypeScript',
-    Icon: <SiTypescript size="80" />,
+    Icon: <SiTypescript size="50" />,
   },
 
   {
     skillName: 'JavaScript',
-    Icon: <SiJavascript size="80" />,
+    Icon: <SiJavascript size="50" />,
   },
 
   {
     skillName: 'Nextjs',
-    Icon: <SiNextdotjs size="80" />,
+    Icon: <SiNextdotjs size="50" />,
   },
   {
     skillName: 'ReactJS',
-    Icon: <SiReact size="80" />,
+    Icon: <SiReact size="50" />,
   },
   {
     skillName: 'FramerMotion',
-    Icon: <SiFramer size="80" />,
+    Icon: <SiFramer size="50" />,
   },
   {
     skillName: 'Tailwindcss',
-    Icon: <SiTailwindcss size="80" />,
+    Icon: <SiTailwindcss size="50" />,
   },
 ];
 
 export const backEndTech = [
   {
     skillName: 'NodeJS',
-    Icon: <SiNodedotjs size="80" />,
+    Icon: <SiNodedotjs size="50" />,
   },
 
   {
     skillName: 'MongoDB',
-    Icon: <SiMongodb size="80" />,
+    Icon: <SiMongodb size="50" />,
   },
   {
     skillName: 'ExpressJS',
-    Icon: <SiExpress size="80" />,
+    Icon: <SiExpress size="50" />,
   },
 ];
 
 export const otherTech = [
   {
     skillName: 'Vite',
-    Icon: <SiVite size="80" />,
+    Icon: <SiVite size="50" />,
   },
   {
     skillName: 'Git',
-    Icon: <SiGit size="80" />,
+    Icon: <SiGit size="50" />,
   },
 
   {
     skillName: 'Npm',
-    Icon: <DiNpm size="80" />,
+    Icon: <DiNpm size="50" />,
   },
 ];
 
