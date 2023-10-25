@@ -21,57 +21,49 @@ export const techStack = [
     stack: [
       {
         skillName: 'TypeScript',
-        Icon: <SiTypescript size="50" />,
+        Icon: <SiTypescript size="30" />,
       },
       {
         skillName: 'JavaScript',
-        Icon: <SiJavascript size="50" />,
+        Icon: <SiJavascript size="30" />,
       },
       {
         skillName: 'Nextjs',
-        Icon: <SiNextdotjs size="50" />,
-      },
-      {
-        skillName: 'ReactJS',
-        Icon: <SiReact size="50" />,
-      },
-      {
-        skillName: 'FramerMotion',
-        Icon: <SiFramer size="50" />,
-      },
-      {
-        skillName: 'Tailwindcss',
-        Icon: <SiTailwindcss size="50" />,
+        Icon: <SiNextdotjs size="30" />,
       },
     ],
+  },
+  {
     stackName: 'Back-End Tech',
     stack: [
       {
         skillName: 'NodeJS',
-        Icon: <SiNodedotjs size="50" />,
+        Icon: <SiNodedotjs size="30" />,
       },
       {
         skillName: 'MongoDB',
-        Icon: <SiMongodb size="50" />,
+        Icon: <SiMongodb size="30" />,
       },
       {
         skillName: 'ExpressJS',
-        Icon: <SiExpress size="50" />,
+        Icon: <SiExpress size="30" />,
       },
     ],
+  },
+  {
     stackName: 'Other Tech',
     stack: [
       {
         skillName: 'Vite',
-        Icon: <SiVite size="50" />,
+        Icon: <SiVite size="30" />,
       },
       {
         skillName: 'Git',
-        Icon: <SiGit size="50" />,
+        Icon: <SiGit size="30" />,
       },
       {
         skillName: 'Npm',
-        Icon: <DiNpm size="50" />,
+        Icon: <DiNpm size="30" />,
       },
     ],
   },

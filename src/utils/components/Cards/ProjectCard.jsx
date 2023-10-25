@@ -60,7 +60,10 @@ const ProjectCard = ({
             <div className="project__skills">
               <span className="brightness-75">Built using</span>
               {projectSkill.map(({ skillName, Icon, color }) => (
-                <p className="text-accent"> {skillName}</p>
+                <p key={skillName} className="text-accent">
+                  {' '}
+                  {skillName}
+                </p>
               ))}
             </div>
           </div>

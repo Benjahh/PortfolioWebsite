@@ -81,8 +81,10 @@ export const AboutPage = () => {
           </a>
         </div>
         <div className="skill__container">
-          {techStack.map(({ stack, stackName }) => (
-            <SkillCard key={stackName} stack={stack} stackName={stackName} />
+          {techStack.map(({ stack, stackName, id }) => (
+            <SkillCard key={id} stack={stack} stackName={stackName}>
+              {console.log(techStack)}
+            </SkillCard>
           ))}
         </div>
       </div>
