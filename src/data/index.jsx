@@ -31,6 +31,18 @@ export const techStack = [
         skillName: 'Nextjs',
         Icon: <SiNextdotjs size="30" />,
       },
+      {
+        skillName: 'ReactJS',
+        Icon: <SiReact size="30" />,
+      },
+      {
+        skillName: 'Framer ',
+        Icon: <SiFramer size="30" />,
+      },
+      {
+        skillName: 'Tailwindcss',
+        Icon: <SiTailwindcss size="30" />,
+      },
     ],
   },
   {

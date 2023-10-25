@@ -6,7 +6,7 @@ export const AboutPage = () => {
   return (
     <section
       id="about"
-      className="min-h-screen md:px-80 py-40 flex-between flex-col bg-secondary"
+      className="min-h-screen lg:px-80 py-40 flex-between flex-col bg-secondary"
     >
       <title className="flex-between flex-col gap-8 mb-16  mt-2 text-white">
         <h1 className=" font-montserrat font-bold  text-3xl text-white">
@@ -14,8 +14,8 @@ export const AboutPage = () => {
           <span className="text-accent"> tech </span> stack
         </h1>
       </title>
-      <div className="flex-between flex-row gap-2 ">
-        <div className="flex flex-col relative  bg-primary rounded-md p-8">
+      <div className="flex flex-col gap-2 ">
+        <div className="relative  bg-primary rounded-md p-8">
           <div className="mt-6 gap-4 flex-col  flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a
