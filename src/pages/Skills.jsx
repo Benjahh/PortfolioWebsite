@@ -1,7 +1,3 @@
-import { frontEndTech, backEndTech, otherTech } from '@/data';
-import SkillCard from '../utils/components/Cards/SkillCard';
-
-import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
 import { ShrinkInView } from '../utils/components/framerComponents/ShrinkInView';
 
 export const SkillPage = () => {
@@ -20,7 +16,7 @@ export const SkillPage = () => {
       </div>
 
       <div className="skill__container">
-        <div className="flex-col flex-between gap-2">
+        {/*  <div className="flex-col flex-between gap-2">
           <h1 className="text-lg text-secondAccent">Front-End Stack</h1>
           <FadeInOnScroll className="flex flex-row gap-2 ">
             {frontEndTech.map(({ Icon, skillName }) => (
@@ -44,7 +40,7 @@ export const SkillPage = () => {
               <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
             ))}
           </FadeInOnScroll>
-        </div>
+        </div> */}
       </div>
     </ShrinkInView>
   );

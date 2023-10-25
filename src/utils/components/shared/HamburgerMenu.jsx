@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { flexBetweeen } from '../../../data';
+
 import { NavLinks } from './index';
 
 export const HamburgerMenu = () => {
   const [isMenu, setIsMenu] = useState(false);
   return (
     <div>
-      <button onClick={() => setIsMenu(!isMenu)} className={`${flexBetweeen}`}>
+      <button onClick={() => setIsMenu(!isMenu)} className={``}>
         <GiHamburgerMenu size="25" />
       </button>
       <section>
         {isMenu && (
           <div
-            className={`${flexBetweeen} absolute right-0 w-[300px] bg-yellow-300 border-rose-900 border-2`}
+            className={` absolute right-0 w-[300px] bg-yellow-300 border-rose-900 border-2`}
           >
-            <NavLinks className={`${flexBetweeen} text-red-500 flex-col`} />
+            <NavLinks className={` text-red-500 flex-col`} />
             <a
               src=""
               download=""

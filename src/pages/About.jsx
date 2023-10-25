@@ -1,12 +1,6 @@
 import React from 'react';
-import { frontEndTech, backEndTech, otherTech } from '@/data';
+import { techStack } from '../data';
 import SkillCard from '../utils/components/Cards/SkillCard';
-
-import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
-
-import { SlideInOnScroll } from '../utils/components/framerComponents/FadeInOnScroll';
-
-<TODO>STYLING AND ANIMATION</TODO>;
 
 export const AboutPage = () => {
   return (
@@ -20,7 +14,7 @@ export const AboutPage = () => {
           <span className="text-accent"> tech </span> stack
         </h1>
       </title>
-      <div className="flex flex-row gap-2 ">
+      <div className="flex-between flex-row gap-2 ">
         <div className="flex flex-col relative  bg-primary rounded-md p-8">
           <div className="mt-6 gap-4 flex-col  flex text-left ">
             <p>
@@ -86,33 +80,10 @@ export const AboutPage = () => {
             Resume
           </a>
         </div>
-
         <div className="skill__container">
-          <div className="flex-col p-4 bg-primary rounded-md flex-between gap-4 ">
-            <h1 className="text-lg text-secondAccent">Front-End Stack</h1>
-            <FadeInOnScroll className="flex flex-row gap-2 ">
-              {frontEndTech.map(({ Icon, skillName }) => (
-                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
-              ))}
-            </FadeInOnScroll>
-          </div>
-
-          <div className="flex-col bg-primary gap-4 p-4 rounded-md w-full  flex-between">
-            <h1 className="text-lg text-secondAccent">Back-End Stack</h1>
-            <FadeInOnScroll className="flex-row gap-2 flex">
-              {backEndTech.map(({ skillName, Icon }) => (
-                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
-              ))}
-            </FadeInOnScroll>
-          </div>
-          <div className="flex-col bg-primary rounded-md w-full p-4 flex-between gap-4">
-            <h1 className="text-secondAccent text-lg">Other Tech</h1>
-            <FadeInOnScroll className="flex-row flex gap-2">
-              {otherTech.map(({ skillName, Icon }) => (
-                <SkillCard key={skillName} skillName={skillName} Icon={Icon} />
-              ))}
-            </FadeInOnScroll>
-          </div>
+          {techStack.map(({ stack, stackName }) => (
+            <SkillCard key={stackName} stack={stack} stackName={stackName} />
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HamburgerMenu } from './HamburgerMenu';
-import { flexBetweeen } from '../../../data';
+
 import { NavLinks } from './NavLinks';
 import ToggleComponent from './ToggleComponent';
 
