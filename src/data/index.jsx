@@ -10,6 +10,7 @@ import {
   SiGit,
   SiFramer,
   SiNextdotjs,
+  SiVisualstudiocode,
 } from 'react-icons/si';
 import { DiNpm } from 'react-icons/di';
 
@@ -40,7 +41,7 @@ export const techStack = [
         Icon: <SiFramer size="30" />,
       },
       {
-        skillName: 'Tailwindcss',
+        skillName: 'Tailwind',
         Icon: <SiTailwindcss size="30" />,
       },
     ],
@@ -74,8 +75,8 @@ export const techStack = [
         Icon: <SiGit size="30" />,
       },
       {
-        skillName: 'Npm',
-        Icon: <DiNpm size="30" />,
+        skillName: 'Vscode',
+        Icon: <SiVisualstudiocode size="30" />,
       },
     ],
   },
