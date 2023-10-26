@@ -14,9 +14,9 @@ export const AboutPage = () => {
           <span className="text-accent"> tech </span> stack
         </h1>
       </title>
-      <div className="flex justify-center flex-row gap-2 ">
-        <div className="relative w-[40%]  bg-primary rounded-md p-8">
-          <div className="gap-8 flex-col text-lg  text-white flex text-left ">
+      <div className="flex-row  flex gap-2  ">
+        <div className="bg-primary rounded-md p-8">
+          <div className="gap-8 flex-col   text-white flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a
               <span className="font-extrabold text-white">
@@ -63,12 +63,12 @@ export const AboutPage = () => {
           <a
             download=""
             src=""
-            className="absolute bottom-4 right-4 border p-2 "
+            className=" hidden absolute bottom-4 right-4 border p-2 "
           >
             Resume
           </a>
         </div>
-        <div className="skill__container w-[20%] items-start">
+        <div className="skill__container">
           {techStack.map(({ stack, stackName, id }) => (
             <SkillCard key={id} stack={stack} stackName={stackName}>
               {console.log(techStack)}
