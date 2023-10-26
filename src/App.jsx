@@ -5,6 +5,7 @@ import { ProjectPage } from '@/pages/Projects';
 import { SkillPage } from '@/pages/Skills';
 import { Navbar } from './utils/components/shared';
 import { Footer } from './utils/components/shared';
+import { ContactPage } from './pages/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutPage />
       <SkillPage />
       <ProjectPage />
+      <ContactPage />
       <Footer />
     </div>
   );
