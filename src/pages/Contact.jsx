@@ -25,30 +25,33 @@ export const ContactPage = () => {
       );
   };
   return (
-    <section className="bg-accent">
-      <ShrinkInView className="page__container">
-        <div className="font-montserrat font-bold text-3xl text-white">
-          <h1 className="text-center">
-            ¿Do you want to
-            <span className="text-accent"> contact </span> Me?
-          </h1>
-        </div>
-        <div className="">
-          <form
-            ref={form}
-            className="flex flex-col text-white"
-            onSubmit={sendEmail}
-          >
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-          </form>
-        </div>
-      </ShrinkInView>
-    </section>
+    <ShrinkInView className="page__container">
+      <div className="font-montserrat font-bold text-3xl text-white">
+        <h1 className="text-center">
+          ¿Do you want to
+          <span className="text-accent"> contact </span> Me?
+        </h1>
+      </div>
+
+      <div className="flex-between grow ">
+        <form
+          ref={form}
+          className="flex flex-col gap-2 bg-black p-28 text-white"
+          onSubmit={sendEmail}
+        >
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input
+            className="bg-accent hover:cursor-pointer hover:bg-yellow-700 self-end p-2 rounded-md"
+            type="submit"
+            value="Send"
+          />
+        </form>
+      </div>
+    </ShrinkInView>
   );
 };

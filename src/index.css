@@ -27,9 +27,9 @@
     @apply flex-between gap-2 w-12 h-12 text-sm flex-col p-10  border-b-2 shadow-sm shadow-accent border-accent rounded-md bg-primary;
   }
   .skill__container {
-    @apply flex flex-col relative items-center  justify-center gap-2;
+    @apply flex flex-col relative flex-between gap-2;
   }
   .page__container {
-    @apply md:px-80 bg-secondary min-h-screen py-10 flex items-center flex-col;
+    @apply md:px-80 bg-secondary min-h-screen py-10 flex flex-col;
   }
 }
