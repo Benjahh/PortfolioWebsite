@@ -4,12 +4,9 @@ import SkillCard from '../utils/components/Cards/SkillCard';
 
 export const AboutPage = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen md:px-80 py-40 flex-between flex-col bg-secondary"
-    >
+    <section id="about" className="page__container">
       <title className="flex-between flex-col gap-8 mb-16  mt-2 text-white">
-        <h1 className=" font-montserrat font-bold  text-3xl text-white">
+        <h1 className=" font-montserrat font-bold text-center  text-3xl text-white">
           <span className="text-accent"> About </span> myself: My
           <span className="text-accent"> tech </span> stack
         </h1>

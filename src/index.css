@@ -29,4 +29,7 @@
   .skill__container {
     @apply flex flex-col relative items-center  justify-center gap-2;
   }
+  .page__container {
+    @apply md:px-80 bg-secondary min-h-screen py-10 flex items-center flex-col;
+  }
 }

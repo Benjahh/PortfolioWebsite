@@ -7,12 +7,9 @@ import { FadeInOnScroll } from '../utils/components/framerComponents/FadeInOnScr
 
 export const ProjectPage = () => {
   return (
-    <section
-      id="projects"
-      className="min-h-screen md:px-80 py-40 bg-secondary flex-between flex-col"
-    >
+    <section id="projects" className="page__container">
       <title className="flex-between flex-col gap-8 mb-16  mt-28">
-        <h1 className=" font-montserrat font-bold  text-3xl text-white">
+        <h1 className=" font-montserrat font-bold text-center  text-3xl text-white">
           Some <span className="text-accent"> Projects </span> i've built,
           honing my skills.
         </h1>

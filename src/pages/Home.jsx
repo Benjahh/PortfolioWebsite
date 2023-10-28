@@ -5,16 +5,20 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between bg-gray-200 text-white min-h-screen"
+      className="flex-between flex-col md:px-80 py-10 bg-black  min-h-screen"
     >
-      <div className="m-12 flex-between text-4xl flex-col">
-        <div className="flex-between flex-col gap-4">
-          <h1 className="font-palanquin">
-            Hello, I'm <span className=""> Lucas Agüero.</span>
-          </h1>
-          <p className=" font-poppins">
-            I'm a <span className=""> Full-Stack </span> web developer.
-          </p>
+      <div className="flex-col    flex-between b text-center w-full items-start     text-accent  text-8xl ">
+        <div className="pl-20  ">
+          <h1>LUCAS</h1>
+        </div>
+        <div className=" pl-40    ">
+          <h1>AGÜERO</h1>
+        </div>
+        <div className="pl-60 ">
+          <h1>FULL-STACK</h1>
+        </div>
+        <div className="pl-80 ">
+          <h1>WEB DEVELOPER</h1>
         </div>
       </div>
     </section>
