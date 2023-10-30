@@ -26,31 +26,37 @@ export const ContactPage = () => {
   };
   return (
     <ShrinkInView className="page__container">
-      <div className="font-montserrat font-bold text-3xl text-white">
+      <div className="font-montserrat font-bold text-3xl  text-white">
         <h1 className="text-center">
           ¿Do you want to
           <span className="text-accent"> contact </span> Me?
         </h1>
       </div>
 
-      <div className="flex-between grow ">
-        <form
-          ref={form}
-          className="flex flex-col gap-2 bg-black p-28 text-white"
-          onSubmit={sendEmail}
-        >
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input
-            className="bg-accent hover:cursor-pointer hover:bg-yellow-700 self-end p-2 rounded-md"
-            type="submit"
-            value="Send"
-          />
-        </form>
+      <div className="flex-between  gap-10  flex-row grow ">
+        <div className="text-white flex flex-col text-center gap-4 text-2xl">
+          <h1>Have any ideas, doubts or questions?</h1>
+          <h1>Send me an email!</h1>
+        </div>
+        <div className="bg-primary ">
+          <form
+            ref={form}
+            className="flex flex-col gap-2  p-28 text-white"
+            onSubmit={sendEmail}
+          >
+            <label>Name</label>
+            <input className="contact__input" type="text" name="user_name" />
+            <label>Email</label>
+            <input className="contact__input" type="email" name="user_email" />
+            <label>Message</label>
+            <textarea className="contact__input" name="message" />
+            <input
+              className="bg-accent hover:cursor-pointer hover:bg-yellow-700 self-end p-2 rounded-md"
+              type="submit"
+              value="Send"
+            />
+          </form>
+        </div>
       </div>
     </ShrinkInView>
   );

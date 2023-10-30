@@ -29,6 +29,9 @@
   .skill__container {
     @apply flex flex-col relative flex-between gap-2;
   }
+  .contact__input {
+    @apply text-black px-2 py-1 border-accent border-2 rounded-md  focus:border-accent;
+  }
   .page__container {
     @apply md:px-80 bg-secondary min-h-screen py-10 flex flex-col;
   }

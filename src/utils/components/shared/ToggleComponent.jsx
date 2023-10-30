@@ -10,14 +10,14 @@ const ToggleComponent = () => {
       checked={enabled}
       onChange={setEnabled}
       className={`${
-        enabled ? 'bg-blue-600' : 'bg-gray-200'
+        enabled ? 'bg-accent' : 'bg-white'
       } relative inline-flex h-6 w-10 items-center rounded-full`}
     >
       <span className="sr-only">Enable notifications</span>
       <span
         className={`${
-          enabled ? 'translate-x-5' : 'translate-x-1'
-        } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+          enabled ? 'translate-x-5 bg-accent ' : 'translate-x-1 bg-white '
+        } inline-block h-4 w-4 transform rounded-full transition`}
       />
     </Switch>
   );
