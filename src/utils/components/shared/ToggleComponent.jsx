@@ -12,6 +12,7 @@ const ToggleComponent = () => {
       className={`${
         enabled ? 'bg-accent' : 'bg-white'
       } relative inline-flex h-6 w-10 items-center rounded-full`}
+      ñ
     >
       <span className="sr-only">Enable notifications</span>
       <span

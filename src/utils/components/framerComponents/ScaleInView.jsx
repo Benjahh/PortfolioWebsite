@@ -1,14 +1,13 @@
-import { useRef, useEffect } from 'react';
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export const ScaleInView = ({ children, className }) => {
   return (
-    <motion.div
+    <section.div
       className={className}
       transition={{ duration: 1 }}
       whileInView={{ scale: 0.9 }}
     >
       {children}
-    </motion.div>
+    </section.div>
   );
 };

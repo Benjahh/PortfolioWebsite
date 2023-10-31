@@ -26,8 +26,8 @@ export const ContactPage = () => {
   };
   return (
     <ShrinkInView className="page__container">
-      <div className="font-montserrat font-bold text-3xl  text-white">
-        <h1 className="text-center">
+      <div className="page__title">
+        <h1>
           ¿Do you want to
           <span className="text-accent"> contact </span> Me?
         </h1>

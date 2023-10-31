@@ -5,13 +5,13 @@ import SkillCard from '../utils/components/Cards/SkillCard';
 export const AboutPage = () => {
   return (
     <section id="about" className="page__container">
-      <title className="flex-between flex-col gap-8 mb-16  mt-2 text-white">
-        <h1 className=" font-montserrat font-bold text-center  text-3xl text-white">
+      <div className="page__title">
+        <h1 className="">
           <span className="text-accent"> About </span> myself: My
           <span className="text-accent"> tech </span> stack
         </h1>
-      </title>
-      <div className="flex-row  flex gap-2  ">
+      </div>
+      <div className="flex-row mt-8 flex gap-2  ">
         <div className="bg-primary rounded-md p-8">
           <div className="gap-8 flex-col   text-white flex text-left ">
             <p>
@@ -21,7 +21,7 @@ export const AboutPage = () => {
                 Computer Engineering{' '}
               </span>
               student with a passion for
-              <span className="font-extrabold"> Software Engineering </span>.
+              <span className="font-extrabold"> Software Engineering</span>.
             </p>
             <p>
               I'm currently pursuing
