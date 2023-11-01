@@ -131,16 +131,29 @@ export const projects = [
     reverse: true,
     projectSkill: [
       {
-        skillName: 'ReactJS',
+        skillName: 'NextJS,',
         Icon: <SiReact size="" />,
+        color: '#ff1e7a',
       },
       {
-        skillName: 'Tailwindcss',
+        skillName: 'TailWindcss,',
         Icon: <SiTailwindcss size="" />,
+        color: '#FF5337',
       },
       {
-        skillName: 'TypeScript',
+        skillName: 'TypeScript,',
         Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'HeadlessUI,',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'Redux',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
       },
     ],
   },
@@ -156,16 +169,29 @@ export const projects = [
     reverse: false,
     projectSkill: [
       {
-        skillName: 'ReactJS',
+        skillName: 'NextJS,',
         Icon: <SiReact size="" />,
+        color: '#ff1e7a',
       },
       {
-        skillName: 'Tailwindcss',
+        skillName: 'TailWindcss,',
         Icon: <SiTailwindcss size="" />,
+        color: '#FF5337',
       },
       {
-        skillName: 'TypeScript',
+        skillName: 'TypeScript,',
         Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'HeadlessUI,',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'Redux',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
       },
     ],
   },
@@ -180,16 +206,29 @@ export const projects = [
     reverse: true,
     projectSkill: [
       {
-        skillName: 'ReactJS',
+        skillName: 'NextJS,',
         Icon: <SiReact size="" />,
+        color: '#ff1e7a',
       },
       {
-        skillName: 'Tailwindcss',
+        skillName: 'TailWindcss,',
         Icon: <SiTailwindcss size="" />,
+        color: '#FF5337',
       },
       {
-        skillName: 'TypeScript',
+        skillName: 'TypeScript,',
         Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'HeadlessUI,',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
+      },
+      {
+        skillName: 'Redux',
+        Icon: <SiTypescript size="" />,
+        color: '#5e3ad8',
       },
     ],
   },

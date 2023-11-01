@@ -7,6 +7,14 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar-track {
+  background-color: #6267f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6267f1;
+}
+
 @layer components {
   .flex-between {
     @apply justify-center items-center flex;
@@ -27,7 +35,7 @@
     @apply flex-between gap-2 w-12 h-12 text-sm flex-col p-10  border-b-2 shadow-sm shadow-accent border-accent rounded-md bg-primary;
   }
   .skill__container {
-    @apply flex flex-col relative flex-between gap-2;
+    @apply flex-row relative flex-between gap-2;
   }
   .contact__input {
     @apply text-black px-2 py-1 border-accent border-2 rounded-md  focus:border-accent;

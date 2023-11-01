@@ -11,8 +11,8 @@ export const AboutPage = () => {
           <span className="text-accent"> tech </span> stack
         </h1>
       </div>
-      <div className="flex-row mt-8 flex gap-2  ">
-        <div className="bg-primary rounded-md p-8">
+      <div className="flex-col mt-8 flex gap-2  ">
+        <div className="bg-primary rounded-m  p-8">
           <div className="gap-8 flex-col   text-white flex text-left ">
             <p>
               Hi, my name is Lucas. I'm a

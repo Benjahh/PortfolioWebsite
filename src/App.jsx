@@ -9,7 +9,7 @@ import { ContactPage } from './pages/Contact';
 
 function App() {
   return (
-    <div className="relative  ">
+    <div className="relative bg-accent ">
       <Navbar />
       <HomePage />
       <AboutPage />
