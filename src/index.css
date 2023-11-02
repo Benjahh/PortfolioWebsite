@@ -7,14 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar-track {
-  background-color: #6267f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6267f1;
-}
-
 @layer components {
   .flex-between {
     @apply justify-center items-center flex;
@@ -38,12 +30,12 @@
     @apply flex-row relative flex-between gap-2;
   }
   .contact__input {
-    @apply text-black px-2 py-1 border-accent border-2 rounded-md  focus:border-accent;
+    @apply text-white px-4 py-4 bg-primary  border-accent  rounded-md border-accent border-2;
   }
   .page__container {
     @apply md:px-80 bg-secondary min-h-screen py-10 flex flex-col;
   }
   .page__title {
-    @apply font-montserrat font-bold text-center  text-3xl text-white;
+    @apply font-montserrat font-bold text-center  text-4xl text-white;
   }
 }
