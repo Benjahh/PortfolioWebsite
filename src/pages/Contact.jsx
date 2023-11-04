@@ -26,9 +26,9 @@ export const ContactPage = () => {
   };
   return (
     <ShrinkInView className="page__container">
-      <div className="flex-between gap-10  flex-row grow  ">
+      <div className="flex-between gap-10 relative  flex-row grow  ">
         <div className="text-white    flex-col flex gap-10 ">
-          <h1 className="page__title top-0 ">
+          <h1 className="page__title  ">
             ¿Do you want to
             <span className="text-accent"> contact </span> Me?
           </h1>

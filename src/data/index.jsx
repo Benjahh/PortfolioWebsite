@@ -18,6 +18,23 @@ import testImage from '../assets/iamges/test_image.png';
 
 export const techStack = [
   {
+    stackName: 'Back-End Tech',
+    stack: [
+      {
+        skillName: 'NodeJS',
+        Icon: <SiNodedotjs size="30" />,
+      },
+      {
+        skillName: 'MongoDB',
+        Icon: <SiMongodb size="30" />,
+      },
+      {
+        skillName: 'ExpressJS',
+        Icon: <SiExpress size="30" />,
+      },
+    ],
+  },
+  {
     stackName: 'Front-End Tech',
     stack: [
       {
@@ -43,23 +60,6 @@ export const techStack = [
       {
         skillName: 'Tailwind',
         Icon: <SiTailwindcss size="30" />,
-      },
-    ],
-  },
-  {
-    stackName: 'Back-End Tech',
-    stack: [
-      {
-        skillName: 'NodeJS',
-        Icon: <SiNodedotjs size="30" />,
-      },
-      {
-        skillName: 'MongoDB',
-        Icon: <SiMongodb size="30" />,
-      },
-      {
-        skillName: 'ExpressJS',
-        Icon: <SiExpress size="30" />,
       },
     ],
   },

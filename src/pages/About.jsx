@@ -12,9 +12,9 @@ export const AboutPage = () => {
         </h1>
       </div>
       <div className="flex-col mt-8 flex gap-2  ">
-        <div className="bg-primary rounded-m  p-8">
-          <div className="gap-8 flex-col   text-white flex text-left ">
-            <p>
+        <div className="bg-primary rounded-m w-1/2 self-center font-medium  p-8">
+          <div className="gap-8 flex-col  text-white flex text-left ">
+            <p className="brightness-75 ">
               Hi, my name is Lucas. I'm a
               <span className="font-extrabold text-white">
                 {' '}
@@ -23,7 +23,7 @@ export const AboutPage = () => {
               student with a passion for
               <span className="font-extrabold"> Software Engineering</span>.
             </p>
-            <p>
+            <p className="brightness-75 ">
               I'm currently pursuing
               <span className="font-extrabold text-white">
                 {' '}
@@ -32,13 +32,13 @@ export const AboutPage = () => {
               at <span className="font-extrabold text-white"> UA </span>
               (Universidad Americana), located in Asuncion, Paraguay.
             </p>
-            <p>
+            <p className="brightness-75 ">
               I'm a full-stack developer, specializing in the
               <span className="font-extrabold text-white"> MERN </span> stack
               (MongoDB, Express, React, and Node), and I'm keen on building
               high-quality, scalable web applications.
             </p>
-            <p>
+            <p className="brightness-75 ">
               My approach to application development is based on several core
               principles. I prioritize creating
               <span className="font-extrabold text-white"> modern </span> user
@@ -51,7 +51,7 @@ export const AboutPage = () => {
               <span className="font-extrabold  text-white"> user-friendly</span>
               .
             </p>
-            <p>
+            <p className="brightness-75 ">
               I continuously improve my skills and knowledge by tackling complex
               challenges and collaborating with others to find creative
               solutions.
