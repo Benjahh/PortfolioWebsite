@@ -12,9 +12,27 @@ import {
   SiNextdotjs,
   SiVisualstudiocode,
 } from 'react-icons/si';
-import { DiNpm } from 'react-icons/di';
 
 import testImage from '../assets/iamges/test_image.png';
+
+export const navbarLinks = [
+  {
+    link: '#home',
+    linkName: 'HOME',
+  },
+  {
+    link: '#about',
+    linkName: 'ABOUT',
+  },
+  {
+    link: '#projects',
+    linkName: 'PROJECTS',
+  },
+  {
+    link: '#contact',
+    linkName: 'CONTACT',
+  },
+];
 
 export const techStack = [
   {
