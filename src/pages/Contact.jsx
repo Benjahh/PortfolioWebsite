@@ -28,7 +28,7 @@ export const ContactPage = () => {
     <ShrinkInView className="page__container">
       <div
         id="contact"
-        className="flex-between gap-10 relative  flex-row grow  "
+        className="flex-between gap-10 relative  flex-col grow  "
       >
         <div className="text-white    flex-col flex gap-10 ">
           <h1 className="page__title  ">
@@ -40,35 +40,36 @@ export const ContactPage = () => {
             <h1>¡Send me an email!</h1>
           </div>
         </div>
-        <div className="grow ">
+        <div className="  min-w-full ">
           <form
             ref={form}
-            className="flex flex-col gap-8 grow text-white"
+            className="flex flex-col gap-4 grow text-white"
             onSubmit={sendEmail}
           >
-            <input
-              className="contact__input "
-              placeholder="Name"
-              type="text"
-              name="user_name"
-            />
+            <div className="flex flex-row gap-4">
+              <input
+                className="contact__input w-full "
+                placeholder="Your name"
+                type="text"
+                name="user_name"
+              />
 
-            <input
-              className="contact__input"
-              placeholder="Email"
-              type="email"
-              name="user_email"
-            />
-
+              <input
+                className="contact__input w-full"
+                placeholder="Your email"
+                type="email"
+                name="user_email"
+              />
+            </div>
             <textarea
               className="contact__input h-52"
-              placeholder="Message"
+              placeholder="Your message"
               name="message"
             />
             <input
-              className="bg-accent hover:cursor-pointer hover:bg-white hover:text-accent font-bold  p-4 rounded-md"
+              className="bg-accent hover:cursor-pointer self-center hover:bg-white hover:text-accent font-bold  p-4 rounded-md"
               type="submit"
-              value="SEND"
+              value="Send Message"
             />
           </form>
         </div>

@@ -5,13 +5,12 @@ import { TextAnimation } from '../utils/components/framerComponents/TextAnimatio
 
 export const HomePage = () => {
   const placeholderText = [
-    { type: 'heading1', text: 'LUCAS', padding: '0', color: 'accent' },
-    { type: 'heading1', text: 'AGÜERO', padding: '20', color: 'white' },
-    { type: 'heading1', text: 'FULL-STACK', padding: '60', color: 'accent' },
+    { text: 'LUCAS', padding: '1', color: 'accent' },
+    { text: 'AGÜERO', padding: '20', color: 'white' },
+    { text: 'FULL-STACK', padding: '40', color: 'accent' },
     {
-      type: 'heading1',
       text: 'WEB DEVELOPER',
-      padding: '80',
+      padding: '60',
       color: 'white',
     },
   ];
@@ -35,7 +34,7 @@ export const HomePage = () => {
         animate="visible"
         variants={container}
       >
-        <motion.div className=" text-8xl flex-col flex gap-4  font-bold ">
+        <motion.div className=" text-8xl  gap-4 font-bold ">
           {placeholderText.map((item, index) => (
             <TextAnimation {...item} key={index} />
           ))}

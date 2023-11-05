@@ -1,20 +1,22 @@
 import React from 'react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri';
+import { FadeInOnScroll } from '../framerComponents/FadeInOnScroll';
 
 export const SocialIcons = () => {
   return (
-    <section className=" text-black   fixed flex-col flex left-0 bottom-0 m-8">
-      <FaGithubSquare
-        className=" bg-accent hover:cursor-pointer hover:scale-125 hover:text-white rounded-md"
-        size={40}
-      />
+    <section>
+      <FadeInOnScroll className="text-accent fixed flex-col flex left-0 gap-4 bottom-0 m-8">
+        <RiGithubFill
+          className=" bg-black border-2 border-accent p-1  hover:cursor-pointer  hover:text-white rounded-full"
+          size={40}
+        />
 
-      <div className="  self-center  h-10 bg-accent w-[2px]" />
-      <FaLinkedin
-        className=" bg-accent hover:text-white hover:scale-125 hover:cursor-pointer rounded-md shadow-lg "
-        size={40}
-      />
+        <RiLinkedinFill
+          className=" bg-black border-2 border-accent p-1 hover:text-white hover:cursor-pointer rounded-full shadow-lg "
+          size={40}
+        />
+      </FadeInOnScroll>
     </section>
   );
 };

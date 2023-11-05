@@ -21,8 +21,8 @@ export default {
         openSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        primary: '#2c2c2c',
-        secondary: '#1E2120',
+        primary: '#141414',
+        secondary: '#080808',
         accent: '#6267F1',
         secondAccent: '#4ACEA8',
       },

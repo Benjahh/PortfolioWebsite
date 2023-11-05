@@ -31,7 +31,7 @@ export const TextAnimation = (props) => {
   });
 
   return (
-    <div className={`flex flex-row  pl-${padding}   `}>
+    <div className={`flex flex-row  ml-${padding} `}>
       {words.map((word, index) => {
         return (
           <div className="flex" key={index}>

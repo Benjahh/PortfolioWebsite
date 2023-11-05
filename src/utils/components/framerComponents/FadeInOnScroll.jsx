@@ -3,23 +3,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useIntersectionObserver } from '../../customHooks/userInstersectionObserver';
 
 export const FadeInOnScroll = ({ children, className }) => {
-  const ref = useRef();
-  const controls = useAnimation();
-  const threshold = 1;
-  useIntersectionObserver(ref, controls, threshold);
-
-  const fadeInVariants = {
-    initial: { opacity: 0 },
-    final: { opacity: 1 },
-  };
-
   return (
     <motion.div
-      ref={ref}
-      initial="initial"
-      animate={controls}
-      variants={fadeInVariants}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.4, ease: 'easeIn' }}
+      viewport={{ once: true }}
       className={className}
     >
       {children}
