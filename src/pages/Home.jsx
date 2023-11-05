@@ -22,7 +22,7 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between flex-col md:px-80 py-10 bg-black  min-h-screen"
+      className="flex-between flex-col md:px-80 py-10    min-h-screen"
     >
       <motion.div
         className="App"
@@ -30,11 +30,22 @@ export const HomePage = () => {
         animate="visible"
         variants={container}
       >
-        <div className="">
+        <motion.div
+          animate={{
+            backgroundImage:
+              'linear-gradient(to bottom, #ffffff, #000000 100%)',
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 4,
+            repeatType: 'reverse',
+          }}
+          className=" text-8xl flex-col gap-2    flex font-bold "
+        >
           {placeholderText.map((item, index) => (
             <TextAnimation {...item} key={index} />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );

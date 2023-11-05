@@ -1,18 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Wrapper = ({ children, className }) => {
+// Word wrapper
+const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
-  return <span>{children}</span>;
+  return <span>{props.children}</span>;
 };
 
+// Map API "type" vaules to JSX tag names
 const tagMap = {
   paragraph: 'p',
   heading1: 'h1',
   heading2: 'h2',
 };
 
-// Map API "type" vaules to JSX tag names
+// AnimatedCharacters
+// Handles the deconstruction of each word and character to setup for the
+// individual character animations
 export const TextAnimation = (props) => {
   // Framer Motion variant object, for controlling animation
   const item = {
@@ -30,6 +34,7 @@ export const TextAnimation = (props) => {
 
   //  Split each word of props.text into an array
   const splitWords = props.text.split(' ');
+
   const padding = props.padding;
 
   // Create storage array
@@ -42,25 +47,31 @@ export const TextAnimation = (props) => {
 
   // Add a space ("\u00A0") to the end of each word
   words.map((word) => {
-    word.push('\u00A0');
+    return word.push('\u00A0');
   });
 
+  // Get the tag name from tagMap
   const Tag = tagMap[props.type];
 
   return (
-    <Tag
-      className={`  bg-red-500 flex self-start gap-4 font-medium text-center  text-8xl text-yellow-50 pl-${padding}`}
-    >
-      {words.map((word, index) => (
-        // Wrap each word in the Wrapper component
-        <Wrapper className="" key={index}>
-          {words[index].flat().map((element, index) => (
-            <div className={'inline-flex '} key={index}>
-              <motion.span variants={item}>{element}</motion.span>
-            </div>
-          ))}
-        </Wrapper>
-      ))}
-    </Tag>
+    <div className={` bg-inherit pl-${padding}`}>
+      {words.map((word, index) => {
+        return (
+          // Wrap each word in the Wrapper component
+          <Wrapper key={index}>
+            {words[index].flat().map((element, index) => {
+              return (
+                <span className="inline-flex bg-inherit" key={index}>
+                  <motion.span variants={item} className="text-white ">
+                    {element}
+                  </motion.span>
+                </span>
+              );
+            })}
+          </Wrapper>
+        );
+      })}
+      {/* {} */}
+    </div>
   );
 };
