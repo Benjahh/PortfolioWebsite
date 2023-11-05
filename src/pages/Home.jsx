@@ -5,10 +5,15 @@ import { TextAnimation } from '../utils/components/framerComponents/TextAnimatio
 
 export const HomePage = () => {
   const placeholderText = [
-    { type: 'heading1', text: 'LUCAS', padding: '0' },
-    { type: 'heading1', text: 'AGÜERO', padding: '20' },
-    { type: 'heading1', text: 'FULL-STACK', padding: '40' },
-    { type: 'heading1', text: 'WEB DEVELOPER', padding: '60' },
+    { type: 'heading1', text: 'LUCAS', padding: '0', color: 'accent' },
+    { type: 'heading1', text: 'AGÜERO', padding: '20', color: 'white' },
+    { type: 'heading1', text: 'FULL-STACK', padding: '60', color: 'accent' },
+    {
+      type: 'heading1',
+      text: 'WEB DEVELOPER',
+      padding: '80',
+      color: 'white',
+    },
   ];
 
   const container = {
@@ -22,7 +27,7 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between flex-col md:px-80 py-10    min-h-screen"
+      className="flex-between flex-col md:px-80 py-1 bg-black min-h-screen"
     >
       <motion.div
         className="App"
@@ -30,18 +35,7 @@ export const HomePage = () => {
         animate="visible"
         variants={container}
       >
-        <motion.div
-          animate={{
-            backgroundImage:
-              'linear-gradient(to bottom, #ffffff, #000000 100%)',
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 4,
-            repeatType: 'reverse',
-          }}
-          className=" text-8xl flex-col gap-2    flex font-bold "
-        >
+        <motion.div className=" text-8xl flex-col flex gap-4  font-bold ">
           {placeholderText.map((item, index) => (
             <TextAnimation {...item} key={index} />
           ))}
