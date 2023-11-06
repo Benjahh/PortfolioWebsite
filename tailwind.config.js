@@ -21,9 +21,10 @@ export default {
         openSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        primary: '#141414',
+        primary: '#88304E',
+
         secondary: '#080808',
-        accent: '#6267F1',
+        accent: '#E23E57',
         secondAccent: '#4ACEA8',
       },
       boxShadow: {
