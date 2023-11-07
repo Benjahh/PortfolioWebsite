@@ -67,7 +67,7 @@ export const ContactPage = () => {
               name="message"
             />
             <input
-              className="bg-accent hover:cursor-pointer self-center hover:bg-white hover:text-accent font-bold  p-4 rounded-md"
+              className="bg-black border-accent border-2 hover:cursor-pointer self-center hover:bg-accent hover:text-white font-bold  p-4 rounded-md"
               type="submit"
               value="Send Message"
             />

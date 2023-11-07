@@ -33,13 +33,13 @@ export const Navbar = () => {
           initial="hidden"
           animate="visible"
           variants={container}
-          className=" flex-row gap-6   font-monsterrat font-bold flex-between"
+          className=" flex-row gap-6   font-monsterrat font-extrabold flex-between"
         >
           {navbarLinks.map(({ link, linkName }) => (
             <NavLinks
               link={link}
               name={linkName}
-              className="hover:scale-110 text-accent hover:text-white overflow-hidden text-lg"
+              className="hover:scale-110  text-accent hover:text-white overflow-hidden text-lg"
             />
           ))}
         </motion.div>

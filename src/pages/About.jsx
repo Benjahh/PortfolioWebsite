@@ -12,7 +12,7 @@ export const AboutPage = () => {
         </h1>
       </div>
       <div className="flex-col mt-8 flex gap-2  ">
-        <div className="bg-primary rounded-md  w-1/2 border border-accent self-center font-medium  p-8">
+        <div className="bg-primary rounded-md  w-1/2 self-center font-medium  p-8">
           <div className="gap-8 flex-col  text-white flex text-left ">
             <p className="brightness-75 ">
               Hi, my name is Lucas. I'm a
@@ -65,13 +65,13 @@ export const AboutPage = () => {
             Resume
           </a>
         </div>
-        {/* <div className="skill__container">
+        <div className="skill__container">
           {techStack.map(({ stack, stackName, id }) => (
             <SkillCard key={id} stack={stack} stackName={stackName}>
               {console.log(techStack)}
             </SkillCard>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );

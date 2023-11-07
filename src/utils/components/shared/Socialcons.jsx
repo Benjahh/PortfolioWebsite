@@ -6,7 +6,7 @@ import { FadeInOnScroll } from '../framerComponents/FadeInOnScroll';
 export const SocialIcons = () => {
   return (
     <section>
-      <FadeInOnScroll className="text-accent fixed flex-col flex left-0 gap-4 bottom-0 m-8">
+      <FadeInOnScroll className="text-accent fixed flex-col flex left-8 gap-4 bottom-8 ">
         <RiGithubFill
           className=" bg-black border-2 border-accent p-1  hover:cursor-pointer  hover:text-white rounded-full"
           size={40}

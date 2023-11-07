@@ -30,10 +30,10 @@
     @apply flex-row relative flex-between gap-2;
   }
   .contact__input {
-    @apply text-white px-4 py-4 bg-primary   rounded-md border-accent border-2;
+    @apply text-white px-4 py-4 bg-primary focus:outline-accent outline-none rounded-md;
   }
   .page__container {
-    @apply md:px-80 bg-secondary min-h-screen py-10 flex flex-col;
+    @apply md:px-80 bg-secondary min-h-screen pt-20 pb-40 flex flex-col;
   }
   .page__title {
     @apply font-montserrat font-bold text-center  text-4xl text-white;
