@@ -22,10 +22,10 @@ export default {
       },
       colors: {
         primary: '#151515 ',
-
-        secondary: '#080808',
-        accent: '#DE00FF',
-        secondAccent: '#4ACEA8',
+        secondary: '#212121',
+        accent: '#F5F7F8',
+        secondAccent: '#F7ce3e',
+        thirdAccent: '#495E57',
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',

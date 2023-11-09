@@ -31,14 +31,18 @@ export const TextAnimation = (props) => {
   });
 
   return (
-    <div className="flex flex-row"
-    style={{paddingLeft: `${padding}rem` }}>
+    <div
+      className="flex flex-row  "
+      style={{
+        paddingLeft: padding,
+      }}
+    >
       {words.map((word, index) => {
         return (
           <div className="flex" key={index}>
             {words[index].flat().map((element, index) => (
               <motion.span
-                className={`text-${color} block overflow-hidden `}
+                className={`text-secondAccent block overflow-hidden `}
                 key={index}
                 transition={{
                   staggerChildren: 4,

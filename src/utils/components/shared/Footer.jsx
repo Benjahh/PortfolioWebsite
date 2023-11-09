@@ -1,14 +1,19 @@
 import React from 'react';
 
-import { BsArrowUpSquare  } from 'react-icons/bs';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 export const Footer = () => {
   return (
     <div className="bottom-0 h-[100px] w-full justify-between p-6 bg-black text-white flex-row flex">
-      <section className={`flex-col`}>Copyright @2023 </section>
-      <section className="flex-betweeen gap-4">
-        
-      <a href="#home" className='flex-betweeen'><BsArrowUpSquare/></a>
+      <section className={`flex-col`}>copyright things</section>
+      <section className={`flex-col gap-4`}>
+        links of proffesional stuff
+        <a href="">
+          <SiLinkedin />
+        </a>
+        <a href="">
+          <SiGithub />
+        </a>
       </section>
     </div>
   );

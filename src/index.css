@@ -12,7 +12,7 @@
     @apply justify-center items-center flex;
   }
   .project__button {
-    @apply border-2 border-accent  text-base bg-black gap-2 flex-between py-[4px] hover:bg-accent hover:text-black  px-2 rounded-md;
+    @apply border-2 border-thirdAccent text-base bg-black gap-2 flex-between py-[4px] hover:bg-thirdAccent hover:text-black  px-2 rounded-md;
   }
   .project__description {
     @apply shadow-xl relative flex  text-white flex-col bg-primary  rounded-sm p-8;
@@ -21,24 +21,24 @@
     @apply font-openSans font-medium my-2 gap-1 mt-4  flex flex-row italic;
   }
   .project__image {
-    @apply self-center border-2 border-accent p-2  rounded-md absolute w-96 h-96;
+    @apply self-center border-2 border-secondAccent p-2  rounded-md absolute w-96 h-96;
   }
   .skill__card {
-    @apply flex-between gap-2 w-12 h-12 text-sm flex-col p-10  border-b-2 shadow-sm shadow-accent border-accent rounded-md bg-primary;
+    @apply flex-between gap-2 w-12 h-12 text-sm flex-col p-10  shadow-sm shadow-thirdAccent  border-thirdAccent rounded-md bg-primary;
   }
   .skill__container {
-    @apply flex-row relative flex-between gap-2;
+    @apply flex-col relative flex-between gap-2;
   }
   .contact__input {
     @apply text-white px-4 py-4 bg-primary focus:outline-accent outline-none rounded-md;
   }
   .page__container {
-    @apply px-40 md:px-48 lg:px-60 bg-secondary min-h-screen pt-20 pb-40 flex items-center flex-col;
+    @apply md:px-80 bg-secondary min-h-screen pt-20 pb-40 flex flex-col;
   }
   .page__title {
-    @apply    font-montserrat font-bold text-center  text-4xl text-white;
+    @apply font-montserrat font-bold text-center text-accent text-4xl;
   }
-  .social__icons {
-    @apply bg-black border-2 border-accent p-1 hover:text-white hover:cursor-pointer rounded-full shadow-lg;
+  .social__icon {
+    @apply bg-primary border-2 border-secondAccent text-secondAccent p-1 hover:text-accent  hover:border-accent hover:cursor-pointer rounded-full shadow-lg;
   }
 }

@@ -7,11 +7,11 @@ export const AboutPage = () => {
     <section id="about" className="page__container">
       <div className="page__title">
         <h1 className="">
-          <span className="text-accent"> About </span> myself: My
-          <span className="text-accent"> tech </span> stack
+          <span className="text-secondAccent"> About </span> myself: My
+          <span className="text-secondAccent"> tech </span> stack
         </h1>
       </div>
-      <div className="flex-col mt-8 flex gap-2  ">
+      <div className="flex-row mt-8 flex gap-2 bg-green-400 justify-center  ">
         <div className="bg-primary rounded-md  w-1/2 self-center font-medium  p-8">
           <div className="gap-8 flex-col  text-white flex text-left ">
             <p className="brightness-75 ">

@@ -5,14 +5,14 @@ import ProjectCard from '../utils/components/Cards/ProjectCard';
 
 export const ProjectPage = () => {
   return (
-    <section id="projects" className="page__container ">
+    <section id="projects" className="page__container">
       <div className="page__title ">
         <h1>
-          Some <span className="text-accent"> Projects </span> i've built,
+          Some <span className="text-secondAccent"> Projects </span> i've built,
           honing my skills.
         </h1>
       </div>
-      <div className=" relative mt-4 w-5/6">
+      <div className=" relative mt-4">
         <div className="gap-40 p-8  flex-between flex-col ">
           {projects.map(
             ({
