@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <article className="relative ">
       <div
-        className={`flex-col border-b-2   border-accent ${
+        className={`flex-col border-b-2   border-secondAccent ${
           reverse
             ? 'md:flex-row-reverse border-l-2 '
             : ' border-r-2 md:flex-row'
@@ -43,8 +43,8 @@ const ProjectCard = ({
               reverse ? ' ml-2  items-start' : ' mr-2 items-end'
             }`}
           >
-            <h2 className=" py-1 px-2  text-accent">{projectType}</h2>
-            <h1 className="bg-accent rounded-sm py-1 px-2 text-white ">
+            <h2 className=" py-1 px-2  text-secondAccent">{projectType}</h2>
+            <h1 className="bg-thirdAccent rounded-sm py-1 px-2 text-accent ">
               {projectName}
             </h1>
           </header>
@@ -60,7 +60,7 @@ const ProjectCard = ({
             <div className="project__skills">
               <span className="brightness-75">Built using</span>
               {projectSkill.map(({ skillName, Icon, color }) => (
-                <p key={skillName} className="text-accent">
+                <p key={skillName} className="text-secondAccent">
                   {' '}
                   {skillName}
                 </p>

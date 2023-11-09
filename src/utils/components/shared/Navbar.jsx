@@ -28,7 +28,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed  top-0 px-80  bg-transparent backdrop-blur-sm z-30 w-full py-4">
       <section className=" items-center w-5/6 hidden md:flex justify-between flex-row mx-auto">
-        <div className="text-white">Favicon</div>
+        <div className="text-secondAccent">Favicon</div>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -39,7 +39,7 @@ export const Navbar = () => {
             <NavLinks
               link={link}
               name={linkName}
-              className="hover:scale-110  text-accent hover:text-white overflow-hidden text-lg"
+              className="hover:scale-110  text-secondAccent hover:text-accent overflow-hidden text-lg"
             />
           ))}
         </motion.div>

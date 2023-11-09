@@ -5,14 +5,10 @@ import { TextAnimation } from '../utils/components/framerComponents/TextAnimatio
 
 export const HomePage = () => {
   const placeholderText = [
-    { text: 'LUCAS', padding: '1', color: 'accent' },
-    { text: 'AGÜERO', padding: '20', color: 'white' },
-    { text: 'FULL-STACK', padding: '40', color: 'accent' },
-    {
-      text: 'WEB DEVELOPER',
-      padding: '60',
-      color: 'white',
-    },
+    { text: 'LUCAS', padding: '0', color: 'accent' },
+    { text: 'AGÜERO', padding: '5rem', color: 'secondAccent' },
+    { text: 'FULL-STACK', padding: '10rem', color: 'accent' },
+    { text: 'WEB DEVELOPER', padding: '15rem', color: 'secondAccent' },
   ];
 
   const container = {
@@ -26,7 +22,7 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between flex-col md:px-80 py-1 bg-black min-h-screen"
+      className="flex-between flex-col md:px-80 py-1 font-serif bg-[#151515] min-h-screen"
     >
       <motion.div
         className="App"
