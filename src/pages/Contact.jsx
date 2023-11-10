@@ -25,10 +25,10 @@ export const ContactPage = () => {
       );
   };
   return (
-    <ShrinkInView className="page__container bg-secondAccent">
+    <ShrinkInView className="page__container bg-secondary">
       <div
         id="contact"
-        className="flex-between gap-10 bg-secondary relative  flex-col grow  "
+        className="flex-between gap-10 relative  flex-col grow  "
       >
         <div className="text-white  flex-col flex gap-10 ">
           <h1 className="page__title  ">

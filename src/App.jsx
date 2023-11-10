@@ -7,6 +7,7 @@ import { Navbar } from './utils/components/shared';
 import { SocialIcons } from './utils/components/shared';
 import { Footer } from './utils/components/shared';
 import { ContactPage } from './pages/Contact';
+import { Sidebar } from './utils/components/shared/Sidebar';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ContactPage />
       <SocialIcons />
       <Footer />
+      <Sidebar />
     </div>
   );
 }

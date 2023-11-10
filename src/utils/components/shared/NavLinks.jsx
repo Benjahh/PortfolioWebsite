@@ -3,25 +3,38 @@ import { motion } from 'framer-motion';
 import { element } from 'prop-types';
 
 export const NavLinks = ({ className, link, name }) => {
-  const navbarVariant = {
-    hidden: {
-      y: '300%',
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 1.4 },
+  const variants = {
+    open: {
+      transition: {
+        staggerChildren: 0.1,
+      },
     },
-    visible: {
+    closed: {
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+      },
+    },
+  };
+  const itemVariants = {
+    open: {
       y: 0,
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 1.3 },
+      opacity: 1,
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
     },
   };
   return (
     <>
       <AnchorLink href={link} className={className}>
         <motion.div
-          initial="hidden"
-          className="overflow-hidden  flex-between "
-          animate="visible"
-          variants={navbarVariant}
           key={link}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-red-500"
         >
           {name}
         </motion.div>
