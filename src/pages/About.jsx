@@ -12,7 +12,7 @@ export const AboutPage = () => {
         </h1>
       </div>
       <div className="flex-row mt-8 flex gap-2 bg-green-400 justify-center  ">
-        <div className="bg-primary rounded-md  w-1/2 self-center font-medium  p-8">
+        <div className="bg-primary rounded-md  self-center   p-8">
           <div className="gap-8 flex-col  text-white flex text-left ">
             <p className="brightness-75 ">
               Hi, my name is Lucas. I'm a

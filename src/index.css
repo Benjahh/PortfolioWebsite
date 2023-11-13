@@ -27,7 +27,7 @@
     @apply flex-between gap-2 w-12 h-12 text-sm flex-col p-10  shadow-sm shadow-thirdAccent  border-thirdAccent rounded-md bg-primary;
   }
   .skill__container {
-    @apply flex-col relative flex-between gap-2;
+    @apply flex-col relative flex-between gap-2 bg-red-700 p-2;
   }
   .contact__input {
     @apply text-white px-4 py-4 bg-primary focus:outline-accent outline-none rounded-md;

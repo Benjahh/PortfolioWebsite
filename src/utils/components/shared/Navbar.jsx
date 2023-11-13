@@ -4,6 +4,7 @@ import { HamburgerMenu } from './HamburgerMenu';
 import { navbarLinks } from '../../../data';
 import { NavLinks } from './NavLinks';
 import ToggleComponent from './ToggleComponent';
+import { Sidebar } from './Sidebar';
 
 /* TODO: REFACTOR MORE */
 export const Navbar = () => {
@@ -47,7 +48,7 @@ export const Navbar = () => {
 
       <section className=" bg-blue-200 w-5/6 md:hidden justify-between flex flex-row mx-auto">
         <div>Favicon</div>
-        <HamburgerMenu />
+        <Sidebar/>
       </section>
     </nav>
   );
