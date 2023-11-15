@@ -6,9 +6,9 @@ import { TextAnimation } from '../utils/components/framerComponents/TextAnimatio
 export const HomePage = () => {
   const placeholderText = [
     { text: 'LUCAS', padding: '0', color: 'accent' },
-    { text: 'AGÜERO', padding: '5rem', color: 'secondAccent' },
+    { text: 'AGÜERO', padding: '5rem', color: 'accent' },
     { text: 'FULL-STACK', padding: '10rem', color: 'accent' },
-    { text: 'WEB DEVELOPER', padding: '15rem', color: 'secondAccent' },
+    { text: 'WEB DEVELOPER', padding: '15rem', color: 'accent' },
   ];
 
   const container = {
@@ -22,7 +22,7 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between flex-col md:px-80 py-1 font-serif bg-[#151515] min-h-screen"
+      className="flex-between flex-col md:px-80 py-1 font-bebasNeue bg-primary min-h-screen"
     >
       <motion.div
         className="App"
@@ -30,7 +30,7 @@ export const HomePage = () => {
         animate="visible"
         variants={container}
       >
-        <motion.div className=" text-8xl  gap-4 font-bold ">
+        <motion.div className=" text-[100px] flex flex-col gap- font-bold ">
           {placeholderText.map((item, index) => (
             <TextAnimation {...item} key={index} />
           ))}

@@ -39,7 +39,7 @@ export const TextAnimation = (props) => {
     >
       {words.map((word, index) => {
         return (
-          <div className="flex" key={index}>
+          <div className="flex gap-1" key={index}>
             {words[index].flat().map((element, index) => (
               <motion.span
                 className={`text-secondAccent block overflow-hidden `}

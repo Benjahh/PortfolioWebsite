@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +16,7 @@
     @apply border-2 border-thirdAccent text-base bg-black gap-2 flex-between py-[4px] hover:bg-thirdAccent hover:text-black  px-2 rounded-md;
   }
   .project__description {
-    @apply shadow-xl relative flex  text-white flex-col bg-primary  rounded-sm p-8;
+    @apply shadow-xl relative flex  text-white flex-col bg-secondary rounded-sm p-8;
   }
   .project__skills {
     @apply font-openSans font-medium my-2 gap-1 mt-4  flex flex-row italic;
@@ -33,7 +34,7 @@
     @apply text-white px-4 py-4 bg-primary focus:outline-accent outline-none rounded-md;
   }
   .page__container {
-    @apply md:px-80 bg-secondary min-h-screen pt-20 pb-40 flex flex-col;
+    @apply md:px-80 bg-primary min-h-screen pt-20 pb-40 flex flex-col;
   }
   .page__title {
     @apply font-montserrat font-bold text-center text-accent text-4xl;
