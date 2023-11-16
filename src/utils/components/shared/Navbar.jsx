@@ -29,7 +29,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed   top-0   bg-transparent backdrop-blur-sm z-30 w-full py-4">
       <section className=" items-center w-5/6 hidden md:flex justify-between flex-row mx-auto">
-        <div className="text-accent">LA</div>
+        <div className="text-accent font-bold">LA</div>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -46,16 +46,16 @@ export const Navbar = () => {
         </motion.div>
       </section>
 
-      <section className=" bg-blue-200 w-5/6 md:hidden  z-50 flex justify-between  mx-auto">
+      <section className=" w-5/6 md:hidden  z-50 flex justify-between  mx-auto">
         <motion.div
           initial="hidden"
-          className="bg-red-500 p-2"
+          className=" relative p-2"
           animate="visible"
           variants={container}
         >
           <Sidebar />
         </motion.div>
-        <div className="self-end bg-green-500 ">Favicon</div>
+        <div className="self-end text-accent font-bold">Favicon</div>
       </section>
     </nav>
   );

@@ -34,7 +34,7 @@ export const NavLinks = ({ className, link, name }) => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="m-2"
+          className="m-2 "
         >
           {name}
         </motion.div>

@@ -22,20 +22,22 @@ export const HomePage = () => {
   return (
     <section
       id="home"
-      className="flex-between flex-col md:px-80 py-1 font-bebasNeue bg-primary min-h-screen"
+      className="flex-between flex-col  py-1 font-bebasNeue bg-primary min-h-screen"
     >
-      <motion.div
-        className="App"
-        initial="hidden"
-        animate="visible"
-        variants={container}
-      >
-        <motion.div className=" md:text-[100px] text-[70px] flex flex-col tracking-wider font-bold ">
-          {placeholderText.map((item, index) => (
-            <TextAnimation {...item} key={index} />
-          ))}
+      <div className="w-5/6 flex-between flex-col ">
+        <motion.div
+          className="App"
+          initial="hidden"
+          animate="visible"
+          variants={container}
+        >
+          <motion.div className=" md:text-[100px] text-[60px] flex flex-col tracking-wider font-bold ">
+            {placeholderText.map((item, index) => (
+              <TextAnimation {...item} key={index} />
+            ))}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 };
