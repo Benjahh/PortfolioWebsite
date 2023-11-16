@@ -8,10 +8,9 @@ import { SocialIcons } from './utils/components/shared';
 import { Footer } from './utils/components/shared';
 import { ContactPage } from './pages/Contact';
 
-
 function App() {
   return (
-    <div className="relative bg-accent ">
+    <div className=" bg-accent ">
       <Navbar />
       <HomePage />
       <AboutPage />
@@ -19,7 +18,6 @@ function App() {
       <ContactPage />
       <SocialIcons />
       <Footer />
-   
     </div>
   );
 }

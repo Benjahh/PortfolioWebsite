@@ -40,7 +40,7 @@ export const Navbar = () => {
             <NavLinks
               link={link}
               name={linkName}
-              className="hover:scale-110  text-secondAccent hover:text-accent overflow-hidden text-lg"
+              className="hover:scale-110  text-white hover:text-accent overflow-hidden text-lg"
             />
           ))}
         </motion.div>
@@ -48,7 +48,7 @@ export const Navbar = () => {
 
       <section className=" bg-blue-200 w-5/6 md:hidden justify-between flex flex-row mx-auto">
         <div>Favicon</div>
-        <Sidebar/>
+        <Sidebar />
       </section>
     </nav>
   );

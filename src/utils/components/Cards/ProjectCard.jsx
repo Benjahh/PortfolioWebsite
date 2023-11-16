@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <article className="relative ">
       <div
-        className={`flex-col border-b-2   border-secondAccent ${
+        className={`flex-col border-b-2   border-white ${
           reverse
             ? 'md:flex-row-reverse border-l-2 '
             : ' border-r-2 md:flex-row'
@@ -43,24 +43,24 @@ const ProjectCard = ({
               reverse ? ' ml-2  items-start' : ' mr-2 items-end'
             }`}
           >
-            <h2 className=" py-1 px-2  text-secondAccent">{projectType}</h2>
-            <h1 className="bg-thirdAccent rounded-sm py-1 px-2 text-accent ">
+            <h2 className=" py-1 px-2  text-white">{projectType}</h2>
+            <h1 className="bg-accent rounded-sm py-1 px-2 text-primary ">
               {projectName}
             </h1>
           </header>
           <div className="project__description ">
             <div className="border-b-2 border-white">
-              <FadeInOnScroll className=" brightness-75 font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
-              <FadeInOnScroll className=" brightness-75 font-medium font-openSans mb-4 ">
+              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
               </FadeInOnScroll>
             </div>
             <div className="project__skills">
-              <span className="brightness-75">Built using</span>
+              <span className="">Built using</span>
               {projectSkill.map(({ skillName, Icon, color }) => (
-                <p key={skillName} className="text-secondAccent">
+                <p key={skillName} className="text-accent">
                   {' '}
                   {skillName}
                 </p>

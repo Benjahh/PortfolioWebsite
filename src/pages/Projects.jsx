@@ -8,7 +8,7 @@ export const ProjectPage = () => {
     <section id="projects" className="page__container">
       <div className="page__title ">
         <h1>
-          Some <span className="text-secondAccent"> Projects </span> i've built,
+          Some <span className="text-accent"> Projects </span> i've built,
           honing my skills.
         </h1>
       </div>
