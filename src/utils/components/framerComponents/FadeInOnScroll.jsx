@@ -7,7 +7,7 @@ export const FadeInOnScroll = ({ children, className }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.4, ease: 'easeIn' }}
+      transition={{ duration: 1.2, ease: 'easeIn' }}
       viewport={{ once: true }}
       className={className}
     >

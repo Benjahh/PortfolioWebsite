@@ -22,10 +22,10 @@ export default {
         bebasNeue: ['Bebas Neue'],
       },
       colors: {
-        primary: '#070707',
+        primary: '#0F0F0F',
         secondary: '#0F0F0F',
         accent: '#EBEB5E',
-        secondAccent: '#2B2B2B',
+        secondAccent: '#070707',
         thirdAccent: '#EFEFEF',
       },
       boxShadow: {

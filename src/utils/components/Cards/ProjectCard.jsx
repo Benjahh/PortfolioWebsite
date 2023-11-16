@@ -3,6 +3,7 @@ import { HiLink } from 'react-icons/hi2';
 import { MoveOnScroll } from '../framerComponents/MoveOnScroll';
 import { FadeInOnScroll } from '../framerComponents/FadeInOnScroll';
 import { ScaleInView } from '../framerComponents/ScaleInView';
+import CustomButtonLink from '../shared/CustomButton';
 
 /* TODO: ANIMATION AND COLOR PALETTE */
 
@@ -19,10 +20,8 @@ const ProjectCard = ({
   return (
     <article className="relative ">
       <div
-        className={`flex-col border-b-2   border-white ${
-          reverse
-            ? 'md:flex-row-reverse border-l-2 '
-            : ' border-r-2 md:flex-row'
+        className={`flex-col ${
+          reverse ? 'md:flex-row-reverse ' : ' md:flex-row'
         }
       flex`}
       >
@@ -48,37 +47,44 @@ const ProjectCard = ({
               {projectName}
             </h1>
           </header>
-          <div className="project__description ">
+          <FadeInOnScroll className="project__description ">
             <div className="border-b-2 border-white">
-              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
+              <div className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
-              </FadeInOnScroll>
-              <FadeInOnScroll className=" font-medium font-openSans mb-4 ">
+              </div>
+              <div className=" font-medium font-openSans mb-4 ">
                 {projectDescription}
-              </FadeInOnScroll>
+              </div>
             </div>
             <div className="project__skills">
-              <span className="">Built using</span>
+              <span>Built using</span>
               {projectSkill.map(({ skillName, Icon, color }) => (
                 <p key={skillName} className="text-accent">
-                  {' '}
                   {skillName}
                 </p>
               ))}
             </div>
-          </div>
-          <div
-            className={` text-white text-sm mt-4  flex-row flex ${
-              reverse ? 'self-start' : 'self-end'
+          </FadeInOnScroll>
+          <FadeInOnScroll
+            className={`  mt-4  flex-row flex ${
+              reverse ? 'self-start flex-row-reverse' : 'self-end'
             } gap-2`}
           >
-            <a href={projectRepo} className="project__button  ">
-              Github <SiGithub />
-            </a>
-            <a href={projectLink} className="project__button ">
-              Live Site <HiLink />
-            </a>
-          </div>
+            <CustomButtonLink
+              href={projectRepo}
+              className="bg-accent text-black "
+              buttonText="Github"
+            >
+              <SiGithub />
+            </CustomButtonLink>
+            <CustomButtonLink
+              href={projectLink}
+              className="bg-secondAccent text-white"
+              buttonText="Live"
+            >
+              <HiLink />
+            </CustomButtonLink>
+          </FadeInOnScroll>
         </MoveOnScroll>
       </div>
     </article>
