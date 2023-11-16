@@ -27,14 +27,14 @@ export const Navbar = () => {
     },
   };
   return (
-    <nav className="fixed  top-0 px-80  bg-transparent backdrop-blur-sm z-30 w-full py-4">
+    <nav className="fixed   top-0   bg-transparent backdrop-blur-sm z-30 w-full py-4">
       <section className=" items-center w-5/6 hidden md:flex justify-between flex-row mx-auto">
-        <div className="text-secondAccent">Favicon</div>
+        <div className="text-accent">LA</div>
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={container}
-          className=" flex-row gap-6   font-monsterrat font-extrabold flex-between"
+          variants={navbarVariant}
+          className=" flex-row gap-6 font-monsterrat font-extrabold flex-between"
         >
           {navbarLinks.map(({ link, linkName }) => (
             <NavLinks
@@ -46,9 +46,16 @@ export const Navbar = () => {
         </motion.div>
       </section>
 
-      <section className=" bg-blue-200 w-5/6 md:hidden justify-between flex flex-row mx-auto">
-        <div>Favicon</div>
-        <Sidebar />
+      <section className=" bg-blue-200 w-5/6 md:hidden  z-50 flex justify-between  mx-auto">
+        <motion.div
+          initial="hidden"
+          className="bg-red-500 p-2"
+          animate="visible"
+          variants={container}
+        >
+          <Sidebar />
+        </motion.div>
+        <div className="self-end bg-green-500 ">Favicon</div>
       </section>
     </nav>
   );

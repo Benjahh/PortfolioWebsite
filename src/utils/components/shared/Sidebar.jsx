@@ -30,10 +30,10 @@ export const Sidebar = () => {
     <motion.div
       animate={isOpen ? 'open' : 'closed'}
       initial={closed}
-      className="flex-between  bg-white text-black flex-col"
+      className="flex-between p-2 bg-white flex-col"
     >
       <motion.div
-        className="fixed bottom-0 top-0 z-50 left-0 w-[200px] bg-black"
+        className="fixed bottom-0 top-0 z-50 left-0 w-[200px] bg-accent"
         variants={variants}
       >
         {navbarLinks.map(({ link, linkName }) => (

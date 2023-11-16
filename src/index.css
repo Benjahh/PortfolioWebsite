@@ -31,7 +31,7 @@
     @apply flex-col relative  flex;
   }
   .contact__input {
-    @apply text-white px-4 py-4 bg-primary focus:outline-accent outline-none rounded-md;
+    @apply text-thirdAccent px-4 py-4 bg-secondAccent focus:outline-accent outline-none rounded-sm;
   }
   .page__container {
     @apply bg-primary min-h-full flex-between min-w-full  py-20;

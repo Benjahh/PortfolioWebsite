@@ -30,7 +30,7 @@ export const HomePage = () => {
         animate="visible"
         variants={container}
       >
-        <motion.div className=" text-[100px] flex flex-col tracking-wider font-bold ">
+        <motion.div className=" md:text-[100px] text-[70px] flex flex-col tracking-wider font-bold ">
           {placeholderText.map((item, index) => (
             <TextAnimation {...item} key={index} />
           ))}
